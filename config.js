@@ -4,7 +4,7 @@ var respecConfig =
   specStatus: "design",
   //specType: "HR",             // Handreiking
   //format: "markdown",         // Altijd "markdown"     
-  shortName: "gwsw-hyd", 	      // Wordt gebruikt in de document URL
+  shortName: "gwsw-geo", 	      // Wordt gebruikt in de document URL
   license: "cc0",
    
   editors: [{
@@ -14,10 +14,10 @@ var respecConfig =
     companyURL: "https://www.riool.net"
   }],
   authors: [{
-    name: "Jordie Netten",
-    url: "mailto:jordie@netten-wateradvies.nl",
-    company: "Netten Wateradvies",
-    companyURL: "https://www.netten-wateradvies.nl/"
+    name: "Corné Helmons",
+    url: "mailto:cm.helmons@hci-infra.nl",
+    company: "HCI Infra",
+    companyURL: "https://www.hci-infra.nl"
   },{
     name: "Marinus Vonhof",
     url: "mailto:marinus.vonhof@marIvon.nl",
@@ -25,15 +25,15 @@ var respecConfig =
     companyURL: "https://www.marIvon.nl"
   }],
   otherLinks: [{
-    key: "GitHub", href: "https://github.com/stichtingrioned/gwsw-hyd/"
+    key: "GitHub", href: "https://github.com/stichtingrioned/gwsw-geo/"
   }],
   //github: "https://github.com/StichtingRIONED/GWSW"
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   //issueBase: "https://github.com/StichtingRIONED/GWSW/issues/",
 
-  thisVersion: "https://stichtingrioned.github.io/gwsw-hyd/",
+  thisVersion: "https://stichtingrioned.github.io/gwsw-geo/",
   latestVersion: "", // gepubliceerde versie
-  edDraftURI: "https://stichtingrioned.github.io/gwsw-hyd/", // werkversie
+  edDraftURI: "https://stichtingrioned.github.io/gwsw-geo/", // werkversie
 
   maxTocLevel: 3, // Aantal niveau's ToC, default is 0/geen limiet
   level2: true, // mv: hoofdstuk-nummering alleen voor de subsections (20210212)
