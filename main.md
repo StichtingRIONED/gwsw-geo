@@ -4,11 +4,8 @@ Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project, Eric Oos
 
 Vragen over deze website en het GWSW kunt u stellen via gwsw@rioned.org. 
 
-# GWSW Geo - Beschrijving
+# GWSW Geo - Beschrijving wijzigingen versies
 
-Presenteren van GWSW-datasets in geografische vorm
-
-Van: Stichting RIONED
 
 *Versie:*
 
