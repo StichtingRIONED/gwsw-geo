@@ -4124,7 +4124,7 @@ user-id "PDOK") en ga naar linksonder op deze webpagina.
 Rechtsonder op de webpagina verschijnt de mededeling "The user-id PDOK
 was updated".
 
-# Bijlage: Inventarisatie gebruikte symbolen {#bijlage-inventarisatie-gebruikte-symbolen .unnumbered}
+# Bijlage: Inventarisatie gebruikte symbolen
 
 Er is geen nationale concensus over de toepassing van standaardsymbolen
 voor de objecttypes Stedelijk Water. Er zijn dan ook veel verschillende
