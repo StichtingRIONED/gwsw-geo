@@ -1,8 +1,10 @@
-# GWSW Geo - Beschrijving {#gwsw-geo---beschrijving .unnumbered}
+# GWSW Geo
 
-Presenteren van GWSW-datasets in geografische vorm
+Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project, Eric Oosterom is de verantwoordelijk projectmanager. 
 
-Van: Stichting RIONED
+Vragen over deze website en het GWSW kunt u stellen via gwsw@rioned.org. 
+
+# GWSW Geo - Beschrijving wijzigingen versies
 
 *Versie:*
 
@@ -95,7 +97,7 @@ GWSW-types*
 
 *20161106 - Eerste opzet*
 
-# Inhoud {#inhoud .TOC-Heading}
+# Inhoud
 
 GWSW Geo - Beschrijving [1](#gwsw-geo---beschrijving)
 
@@ -179,7 +181,7 @@ De server biedt de mogelijkheid om de GWSW-Ontologie in combinatie met
 stedelijk-water-gegevens (zogenaamde datasets) te raadplegen, te
 ontwikkelen en toe te passen.
 
-![](media/image1.png){width="3.95in" height="2.4320713035870516in"}
+<img src="media/image1.png" style="width:3.95in;height:2.43207in" />
 
 Er zijn vijf websites op de GWSW Server geïnstalleerd:
 
@@ -238,8 +240,7 @@ rioleringsgebieden omvatten.*
 *Een gebied is zodanig gekozen dat het voldoende inzicht geeft in de
 belasting van oppervlaktewater en overnamepunt.*
 
-![](media/image2.png){width="3.1496062992125986in"
-height="1.9881889763779528in"}
+<img src="media/image2.png" style="width:3.14961in;height:1.98819in" />
 
 De aanduiding \"gebied\" is hier belangrijk. In het GWSW is dit een
 ruimtelijk object en wezenlijk verschillend van een fysiek object zoals
@@ -266,8 +267,7 @@ applicatie GWSW Geo levert ("serveert") op aanvraag gegevens in
 geo-formaat vanuit de GWSW database. Voor het opvragen van deze gegevens
 wordt een datasetnaam meegegeven, meestal de gemeentenaam.
 
-![](media/image3.png){width="3.8444444444444446in"
-height="2.0868055555555554in"}
+<img src="media/image3.png" style="width:3.84444in;height:2.08681in" />
 
 GWSW Geo is op de achtergrond een NodeJS-applicatie (oorspronkelijk was
 dat een Python-app) voor het uitvoeren van SPARQL queries en het
@@ -352,472 +352,362 @@ vragen") afgeleid worden van de datasets op de GWSW Server.
 
 Afhankelijk van de eindgebruiker zijn er zeven thema\'s gedefinieerd:
 
-+-------------+-------------+-----------------------------------------+
-| Geo-thema   | Doelgroep   | Omschrijving                            |
-+=============+=============+=========================================+
-| Default     | Adviseurs,  | Volledige weergave van de gangbare      |
-|             | dat         | dataset-inhoud. Bevat alle objecten met |
-|             | abeheerders | een geometrie.                          |
-+-------------+-------------+-----------------------------------------+
-| Beheer      | Beheerders  | Gebieden, hoofdriolering, overstorten,  |
-|             | in de       | uitlaten, gemalen, randvoorzieningen.   |
-|             |             | Met een uitgebreide set kenmerken.      |
-|             | afva        |                                         |
-|             | lwaterketen |                                         |
-+-------------+-------------+-----------------------------------------+
-| PDOK        | PDOK        | Gebieden, hoofdriolering, overstorten,  |
-| Ste         | publicatie  | uitlaten, gemalen, randvoorzieningen.   |
-| delijkwater |             | Met een uitgebreide set kenmerken.      |
-+-------------+-------------+-----------------------------------------+
-| Netwerk     | Modelleur   | Netwerkweergave (knooppunten,           |
-|             |             | verbindingen) voor modelinstumentaria   |
-+-------------+-------------+-----------------------------------------+
-| Aansluiting | Inwoners    | Aansluitleidingen perceel en kolk       |
-+-------------+-------------+-----------------------------------------+
-| Waterschap  | PDOK        | Gebieden, hoofdriolering, overstorten,  |
-|             | publicatie  | uitlaten, gemalen, randvoorzieningen.   |
-|             |             | Met een uitgebreide set kenmerken.      |
-+-------------+-------------+-----------------------------------------+
-| Nulmeting   | Dat         | Rapportage nulmeting.                   |
-|             | abeheerders |                                         |
-+-------------+-------------+-----------------------------------------+
+<table>
+<colgroup>
+<col style="width: 20%" />
+<col style="width: 20%" />
+<col style="width: 59%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Geo-thema</th>
+<th>Doelgroep</th>
+<th>Omschrijving</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Default</p>
+<p>(zonder naam)</p></td>
+<td>Adviseurs, databeheerders</td>
+<td>Volledige weergave van de gangbare dataset-inhoud. Bevat alle objecten met een geometrie.</td>
+</tr>
+<tr class="even">
+<td>Beheer</td>
+<td><p>Beheerders in de</p>
+<p>afvalwaterketen</p></td>
+<td>Gebieden, hoofdriolering, overstorten, uitlaten, gemalen, randvoorzieningen. Met een uitgebreide set kenmerken.</td>
+</tr>
+<tr class="odd">
+<td><p></p>PDOK</p>
+<p>Stedelijk Water</p></td>
+<td><p>PDOK publicatie</p>
+<p>Stedelijk Water</p></td>
+<td>Gebieden, hoofdriolering, overstorten, uitlaten, gemalen, randvoorzieningen. Met een uitgebreide set kenmerken.</td>
+</tr>
+<tr class="even">
+<td>Netwerk</td>
+<td>Modelleur</td>
+<td>Netwerkweergave (knooppunten, verbindingen) voor modelinstumentaria</td>
+</tr>
+<tr class="odd">
+<td>Aansluiting</td>
+<td>Inwoners</td>
+<td>Aansluitleidingen perceel en kolk</td>
+</tr>
+<tr class="even">
+<td>Waterschap</td>
+<td><p>PDOK publicatie</p>
+<p>Waterketen</p></td>
+<td>Gebieden, hoofdriolering, overstorten, uitlaten, gemalen, randvoorzieningen. Met een uitgebreide set kenmerken.</td>
+</tr>
+<tr class="odd">
+<td>Nulmeting</td>
+<td>Databeheerders</td>
+<td>Rapportage nulmeting.</td>
+</tr>
+</tbody>
+</table>
 
 In de volgende paragrafen zijn de details van de Geo-thema\'s
 beschreven.
 
 ### Specificaties van de Geo-thema\'s en GIS-lagen:
+<table style="width:100%;">
+<colgroup>
+<col style="width: 12%" />
+<col style="width: 23%" />
+<col style="width: 26%" />
+<col style="width: 8%" />
+<col style="width: 21%" />
+<col style="width: 7%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>GIS-laag</th>
+<th>Omschrijving inhoud</th>
+<th colspan="2">Specificatie selectie</th>
+<th>Attributen</th>
+<th>Geo-metrie</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td colspan="3"><em>Geo-thema Default: URL =</em> <em>https://geodata.gwsw.nl/{dataset}</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td colspan="6"><p>Het thema Default is bedoeld om de inhoud van gangbare GWSW-datasets zo volledig mogelijk weer te geven, bijvoorbeeld ter controle van de opbouw. Voor inrichting van het thema Default zijn de volgende uitgangspunten gehanteerd:</p>
+<ol type="1">
+<li><p>Toon alle individuen met een geometrie</p></li>
+<li><p>Toon de gangbare kenmerken van die individuen</p></li>
+<li><p>Toon de onderdelen van die individuen met de gangbare kenmerken</p></li>
+<li><p>Gebruik zoveel mogelijk de basisopbouw uit de dataset, zonder bewerkingen.</p></li>
+</ol></td>
+</tr>
+<tr class="odd">
+<td>Buitengrens</td>
+<td>Gebied, bouwwerk, put, …</td>
+<td colspan="2">Individuen met kenmerk gwsw:Buitengrens</td>
+<td>Alle in datasets gangbare attributen</td>
+<td>Buiten-grens</td>
+</tr>
+<tr class="even">
+<td>Punt_deel</td>
+<td>Deksel, Overstortdrempel, Pomp, …</td>
+<td colspan="2">Onderdelen van de indivduen met kenmerk gwsw:Punt</td>
+<td>Alle in datasets gangbare attributen</td>
+<td>Punt</td>
+</tr>
+<tr class="odd">
+<td>Punt</td>
+<td>Put, bouwwerk, …</td>
+<td colspan="2">Individuen met kenmerk gwsw:Punt</td>
+<td>Alle in datasets gangbare attributen</td>
+<td>Punt</td>
+</tr>
+<tr class="even">
+<td>Lijn</td>
+<td>Leiding, …</td>
+<td colspan="2">Individuen met kenmerk gwsw:Lijn</td>
+<td>Alle in datasets gangbare attributen</td>
+<td>Lijn</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td colspan="3"><em>Geo-thema Beheer: URL = https://geodata.gwsw.nl/{dataset}/beheer</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gebied</td>
+<td>Gebied, systeem, stelsel</td>
+<td colspan="2">Alle individuen met kenmerk gwsw:Gebiedsorientatie</td>
+<td>Conform GWSW-MDS</td>
+<td>Buiten-grens</td>
+</tr>
+<tr class="even">
+<td>Put</td>
+<td>Rioolput</td>
+<td colspan="2">Individuen van het type (subtype van) gwsw:Rioolput.</td>
+<td>Conform GWSW-MDS</td>
+<td>Punt</td>
+</tr>
+<tr class="odd">
+<td>Leiding</td>
+<td>Leiding in de hoofdriolering</td>
+<td colspan="2">Individuen van het type (subtype van) gwsw:Leiding uitgezonderd (subtype van) gwsw:Aansluitleiding en (subtype van) gwsw:Goot.</td>
+<td>Conform GWSW-MDS</td>
+<td>Lijn</td>
+</tr>
+<tr class="even">
+<td>Lozing</td>
+<td>Constructie met externe lozing</td>
+<td colspan="2">Individuen van het type gwsw:ExterneOverstortput of gwsw:Overstortput of (subtype van) gwsw:Uitlaatconstructie.</td>
+<td>Conform GWSW-MDS</td>
+<td>Punt</td>
+</tr>
+<tr class="odd">
+<td>Pomp</td>
+<td>Constructie met pomp</td>
+<td colspan="2">Individuen van het type (subtype van) gwsw:Pompput of (subtype van) gwsw:Gemaal of individuen die als deel een (subtype van) gwsw:Pomp hebben.</td>
+<td>Conform GWSW-MDS</td>
+<td>Punt</td>
+</tr>
+<tr class="even">
+<td>Bouwwerk</td>
+<td>Randvoorziening, RWZI</td>
+<td colspan="2">Individuen van het type (subtype van) gwsw:Bouwwerk</td>
+<td>Conform GWSW-MDS</td>
+<td>Punt</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td colspan="3"><em>Geo-thema Netwerk: URL =</em> <em>https://geodata.gwsw.nl/{dataset}/netwerk</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Knooppunt</td>
+<td>Put, compartiment, uitlaat</td>
+<td colspan="2"><p>Individuen van het type (subtype van) gwsw:Rioolput of (subtype van) gwsw:Kolk of (subtype van) gwsw:Bouwwerk.</p>
+<p><mark>P.M.</mark></p>
+<p><mark>Moet Kolk er wel in?</mark></p>
+<p><mark>Niet alle bouwwerken horen erbij</mark></p></td>
+<td>Conform GWSW-Hyd</td>
+<td>Punt</td>
+</tr>
+<tr class="even">
+<td>Verbinding</td>
+<td>Leiding, pomp, wand</td>
+<td colspan="2"><p>Individuen van het type (subtype van) gwsw:Leiding.</p>
+<p><mark>P.M. Nog aanscherpen?</mark></p></td>
+<td>Conform GWSW-Hyd</td>
+<td>Lijn</td>
+</tr>
+<tr class="odd">
+<td>Kunstwerk</td>
+<td>Hydraulisch component pomp, wand, …</td>
+<td colspan="2">Individuen van het type gwsw:UitlaatPunt en individuen (onderdelen) van het type (subtype van) gwsw:Doorlaat of een (subtype van) gwsw:Pomp of een (subtype van) gwsw:Overstortdrempel.</td>
+<td>Conform GWSW-Hyd</td>
+<td>Punt</td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td colspan="3"><em>Geo-thema Aansluiting: URL =</em> <em>https://geodata.gwsw.nl/{dataset}/aansluiting</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Aansluiting</td>
+<td>Inlaat bij aansluiting</td>
+<td colspan="2">Individuen van het type (subtype van) gwsw:Inlaat die deel zijn een (subtype van) gwsw:Aansluiting.</td>
+<td>Stelsel, Naam, Subtype, Datum, Materiaal, Afmetingen</td>
+<td>Punt</td>
+</tr>
+<tr class="odd">
+<td>Aansluiting_Put</td>
+<td>Put en hulpstukken bij aansluiting</td>
+<td colspan="2">Individuen die deel zijn van een (subtype van) gwsw:Aansluiting en het kenmerk gwsw:Punt hebben</td>
+<td></td>
+<td>Punt</td>
+</tr>
+<tr class="even">
+<td>Aansluiting_Leiding</td>
+<td>Aansluitleiding, goot</td>
+<td colspan="2">Individuen van het type (subtype van) gwsw:Aansluitleiding of (subtype van) gwsw:Goot</td>
+<td></td>
+<td>Lijn</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td colspan="3"><em>Geo-thema</em> <em>Kentallen: URL =</em> <em>https://geodata.gwsw.nl/{dataset}/kengetallen</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gebied</td>
+<td>Rioleringsgebied</td>
+<td colspan="2"><mark>P.M. (nog uitwerken, wordt herzien in GWSW 1.6)</mark></td>
+<td>Naam, LengteLeidingen, Buurten + conform GWSW-RioKen</td>
+<td>Buiten-grens</td>
+</tr>
+<tr class="even">
+<td>Buurt</td>
+<td>Buurt met CBS-gegevens</td>
+<td colspan="2"><mark>P.M. (nog uitwerken, wordt herzien in GWSW 1.6)</mark></td>
+<td>Naam, Rioleringsgebied, Gemeente, Wijk, AantalInwoners, AantalHuishoudens, AantalBedrijven, AantalRecreatie</td>
+<td>Buiten-grens</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td colspan="3"><em>Geo-thema Nulmeting: URL =</em> <em>https://geodata.gwsw.nl/{dataset}/nulmeting</em></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Put</td>
+<td>Put in rapport Nulmeting</td>
+<td colspan="2">Rapportmeldingen van het type vali:Violation en de property vali:punt</td>
+<td>Naam, Subtype, Type melding, Kenmerk, Opmerking</td>
+<td>Punt</td>
+</tr>
+<tr class="even">
+<td>Leiding</td>
+<td>Leiding in rapport Nulmeting</td>
+<td colspan="2">Rapportmeldingen van het type vali:Violation en de property vali:lijn</td>
+<td>Naam, Subtype, Type melding, Kenmerk, Opmerking</td>
+<td>Lijn</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td colspan="2"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
-+-------+---------------+------------------+-----+--------------+----+
-| GIS   | Omschrijving  | Specificatie     |     | Attributen   | Ge |
-| -laag | inhoud        | selectie         |     |              | o- |
-|       |               |                  |     |              | me |
-|       |               |                  |     |              | tr |
-|       |               |                  |     |              | ie |
-+=======+===============+==================+=====+==============+====+
-| *Geo- |               |                  |     |              |    |
-| thema |               |                  |     |              |    |
-| Def   |               |                  |     |              |    |
-| ault: |               |                  |     |              |    |
-| URL   |               |                  |     |              |    |
-| =*    |               |                  |     |              |    |
-| *http |               |                  |     |              |    |
-| s://g |               |                  |     |              |    |
-| eodat |               |                  |     |              |    |
-| a.gws |               |                  |     |              |    |
-| w.nl/ |               |                  |     |              |    |
-| {data |               |                  |     |              |    |
-| set}* |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Het   |               |                  |     |              |    |
-| thema |               |                  |     |              |    |
-| De    |               |                  |     |              |    |
-| fault |               |                  |     |              |    |
-| is    |               |                  |     |              |    |
-| be    |               |                  |     |              |    |
-| doeld |               |                  |     |              |    |
-| om de |               |                  |     |              |    |
-| i     |               |                  |     |              |    |
-| nhoud |               |                  |     |              |    |
-| van   |               |                  |     |              |    |
-| gan   |               |                  |     |              |    |
-| gbare |               |                  |     |              |    |
-| GWS   |               |                  |     |              |    |
-| W-dat |               |                  |     |              |    |
-| asets |               |                  |     |              |    |
-| zo    |               |                  |     |              |    |
-| vol   |               |                  |     |              |    |
-| ledig |               |                  |     |              |    |
-| mog   |               |                  |     |              |    |
-| elijk |               |                  |     |              |    |
-| weer  |               |                  |     |              |    |
-| te    |               |                  |     |              |    |
-| g     |               |                  |     |              |    |
-| even, |               |                  |     |              |    |
-| bi    |               |                  |     |              |    |
-| jvoor |               |                  |     |              |    |
-| beeld |               |                  |     |              |    |
-| ter   |               |                  |     |              |    |
-| con   |               |                  |     |              |    |
-| trole |               |                  |     |              |    |
-| van   |               |                  |     |              |    |
-| de    |               |                  |     |              |    |
-| op    |               |                  |     |              |    |
-| bouw. |               |                  |     |              |    |
-| Voor  |               |                  |     |              |    |
-| inric |               |                  |     |              |    |
-| hting |               |                  |     |              |    |
-| van   |               |                  |     |              |    |
-| het   |               |                  |     |              |    |
-| thema |               |                  |     |              |    |
-| De    |               |                  |     |              |    |
-| fault |               |                  |     |              |    |
-| zijn  |               |                  |     |              |    |
-| de    |               |                  |     |              |    |
-| vol   |               |                  |     |              |    |
-| gende |               |                  |     |              |    |
-| uitg  |               |                  |     |              |    |
-| angsp |               |                  |     |              |    |
-| unten |               |                  |     |              |    |
-| g     |               |                  |     |              |    |
-| ehant |               |                  |     |              |    |
-| eerd: |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| 1.    |               |                  |     |              |    |
-|  Toon |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|  alle |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| indiv |               |                  |     |              |    |
-| iduen |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   met |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   een |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|  geom |               |                  |     |              |    |
-| etrie |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| 2.    |               |                  |     |              |    |
-|  Toon |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|    de |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   gan |               |                  |     |              |    |
-| gbare |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|  kenm |               |                  |     |              |    |
-| erken |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   van |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   die |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| indiv |               |                  |     |              |    |
-| iduen |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| 3.    |               |                  |     |              |    |
-|  Toon |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|    de |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| onder |               |                  |     |              |    |
-| delen |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   van |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   die |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| indiv |               |                  |     |              |    |
-| iduen |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   met |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|    de |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   gan |               |                  |     |              |    |
-| gbare |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|  kenm |               |                  |     |              |    |
-| erken |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-| 4     |               |                  |     |              |    |
-| .  Ge |               |                  |     |              |    |
-| bruik |               |                  |     |              |    |
-|     z |               |                  |     |              |    |
-| oveel |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   mog |               |                  |     |              |    |
-| elijk |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|    de |               |                  |     |              |    |
-|     b |               |                  |     |              |    |
-| asiso |               |                  |     |              |    |
-| pbouw |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   uit |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|    de |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|   dat |               |                  |     |              |    |
-| aset, |               |                  |     |              |    |
-|     z |               |                  |     |              |    |
-| onder |               |                  |     |              |    |
-|       |               |                  |     |              |    |
-|    be |               |                  |     |              |    |
-| werki |               |                  |     |              |    |
-| ngen. |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| B     | Gebied,       | Individuen met   |     | Alle in      | Bu |
-| uiten | bouwwerk,     | kenmerk          |     | datasets     | it |
-| grens | put, ...      | gwsw:Buitengrens |     | gangbare     | en |
-|       |               |                  |     | attributen   | -g |
-|       |               |                  |     |              | re |
-|       |               |                  |     |              | ns |
-+-------+---------------+------------------+-----+--------------+----+
-| Punt  | Deksel,       | Onderdelen van   |     | Alle in      | Pu |
-| _deel | Over          | de indivduen met |     | datasets     | nt |
-|       | stortdrempel, | kenmerk          |     | gangbare     |    |
-|       | Pomp, ...     | gwsw:Punt        |     | attributen   |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Punt  | Put,          | Individuen met   |     | Alle in      | Pu |
-|       | bouwwerk, ... | kenmerk          |     | datasets     | nt |
-|       |               | gwsw:Punt        |     | gangbare     |    |
-|       |               |                  |     | attributen   |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Lijn  | Leiding, ...  | Individuen met   |     | Alle in      | Li |
-|       |               | kenmerk          |     | datasets     | jn |
-|       |               | gwsw:Lijn        |     | gangbare     |    |
-|       |               |                  |     | attributen   |    |
-+-------+---------------+------------------+-----+--------------+----+
-|       |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| *Geo- |               |                  |     |              |    |
-| thema |               |                  |     |              |    |
-| Be    |               |                  |     |              |    |
-| heer: |               |                  |     |              |    |
-| URL = |               |                  |     |              |    |
-| h     |               |                  |     |              |    |
-| ttps: |               |                  |     |              |    |
-| //geo |               |                  |     |              |    |
-| data. |               |                  |     |              |    |
-| gwsw. |               |                  |     |              |    |
-| nl/{d |               |                  |     |              |    |
-| atase |               |                  |     |              |    |
-| t}/be |               |                  |     |              |    |
-| heer* |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| G     | Gebied,       | Alle individuen  |     | Conform      | Bu |
-| ebied | systeem,      | met kenmerk      |     | GWSW-MDS     | it |
-|       | stelsel       | gwsw:G           |     |              | en |
-|       |               | ebiedsorientatie |     |              | -g |
-|       |               |                  |     |              | re |
-|       |               |                  |     |              | ns |
-+-------+---------------+------------------+-----+--------------+----+
-| Put   | Rioolput      | Individuen van   |     | Conform      | Pu |
-|       |               | het type         |     | GWSW-MDS     | nt |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Rioolput.   |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Le    | Leiding in de | Individuen van   |     | Conform      | Li |
-| iding | h             | het type         |     | GWSW-MDS     | jn |
-|       | oofdriolering | (subtype van)    |     |              |    |
-|       |               | gwsw:Leiding     |     |              |    |
-|       |               | uitgezonderd     |     |              |    |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw             |     |              |    |
-|       |               | :Aansluitleiding |     |              |    |
-|       |               | en (subtype van) |     |              |    |
-|       |               | gwsw:Goot.       |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| L     | Constructie   | Individuen van   |     | Conform      | Pu |
-| ozing | met externe   | het type         |     | GWSW-MDS     | nt |
-|       | lozing        | gwsw:Ext         |     |              |    |
-|       |               | erneOverstortput |     |              |    |
-|       |               | of               |     |              |    |
-|       |               | g                |     |              |    |
-|       |               | wsw:Overstortput |     |              |    |
-|       |               | of (subtype van) |     |              |    |
-|       |               | gwsw:Uit         |     |              |    |
-|       |               | laatconstructie. |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Pomp  | Constructie   | Individuen van   |     | Conform      | Pu |
-|       | met pomp      | het type         |     | GWSW-MDS     | nt |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Pompput of  |     |              |    |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Gemaal of   |     |              |    |
-|       |               | individuen die   |     |              |    |
-|       |               | als deel een     |     |              |    |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Pomp        |     |              |    |
-|       |               | hebben.          |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Bou   | Ran           | Individuen van   |     | Conform      | Pu |
-| wwerk | dvoorziening, | het type         |     | GWSW-MDS     | nt |
-|       | RWZI          | (subtype van)    |     |              |    |
-|       |               | gwsw:Bouwwerk    |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-|       |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| *Geo- |               |                  |     |              |    |
-| thema |               |                  |     |              |    |
-| Net   |               |                  |     |              |    |
-| werk: |               |                  |     |              |    |
-| URL   |               |                  |     |              |    |
-| =*    |               |                  |     |              |    |
-| *ht   |               |                  |     |              |    |
-| tps:/ |               |                  |     |              |    |
-| /geod |               |                  |     |              |    |
-| ata.g |               |                  |     |              |    |
-| wsw.n |               |                  |     |              |    |
-| l/{da |               |                  |     |              |    |
-| taset |               |                  |     |              |    |
-| }/net |               |                  |     |              |    |
-| werk* |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Knoo  | Put,          | Individuen van   |     | Conform      | Pu |
-| ppunt | compartiment, | het type         |     | GWSW-Hyd     | nt |
-|       | uitlaat       | (subtype van)    |     |              |    |
-|       |               | gwsw:Rioolput of |     |              |    |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Kolk of     |     |              |    |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Bouwwerk.   |     |              |    |
-|       |               |                  |     |              |    |
-|       |               | [P.M.]{.mark}    |     |              |    |
-|       |               |                  |     |              |    |
-|       |               | [Moet Kolk er    |     |              |    |
-|       |               | wel in?]{.mark}  |     |              |    |
-|       |               |                  |     |              |    |
-|       |               | [Niet alle       |     |              |    |
-|       |               | bouwwerken horen |     |              |    |
-|       |               | erbij]{.mark}    |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Verbi | Leiding,      | Individuen van   |     | Conform      | Li |
-| nding | pomp, wand    | het type         |     | GWSW-Hyd     | jn |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Leiding.    |     |              |    |
-|       |               |                  |     |              |    |
-|       |               | [P.M. Nog        |     |              |    |
-|       |               | aans             |     |              |    |
-|       |               | cherpen?]{.mark} |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Kuns  | Hydraulisch   | Individuen van   |     | Conform      | Pu |
-| twerk | component     | het type         |     | GWSW-Hyd     | nt |
-|       | pomp, wand,   | gwsw:UitlaatPunt |     |              |    |
-|       | ...           | en individuen    |     |              |    |
-|       |               | (onderdelen) van |     |              |    |
-|       |               | het type         |     |              |    |
-|       |               | (subtype van)    |     |              |    |
-|       |               | gwsw:Doorlaat of |     |              |    |
-|       |               | een (subtype     |     |              |    |
-|       |               | van) gwsw:Pomp   |     |              |    |
-|       |               | of een (subtype  |     |              |    |
-|       |               | van)             |     |              |    |
-|       |               | gwsw:O           |     |              |    |
-|       |               | verstortdrempel. |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-|       |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| *Geo- |               |                  |     |              |    |
-| thema |               |                  |     |              |    |
-| Aa    |               |                  |     |              |    |
-| nslui |               |                  |     |              |    |
-| ting: |               |                  |     |              |    |
-| URL   |               |                  |     |              |    |
-| =*    |               |                  |     |              |    |
-| *h    |               |                  |     |              |    |
-| ttps: |               |                  |     |              |    |
-| //geo |               |                  |     |              |    |
-| data. |               |                  |     |              |    |
-| gwsw. |               |                  |     |              |    |
-| nl/{d |               |                  |     |              |    |
-| atase |               |                  |     |              |    |
-| t}/aa |               |                  |     |              |    |
-| nslui |               |                  |     |              |    |
-| ting* |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| A     | Inlaat bij    | Individuen van   |     | Stelsel,     | Pu |
-| anslu | aansluiting   | het type         |     | Naam,        | nt |
-| iting |               | (subtype van)    |     | Subtype,     |    |
-|       |               | gwsw:Inlaat die  |     | Datum,       |    |
-|       |               | deel zijn een    |     | Materiaal,   |    |
-|       |               | (subtype van)    |     | Afmetingen   |    |
-|       |               | g                |     |              |    |
-|       |               | wsw:Aansluiting. |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Aansl | Put en        | Individuen die   |     |              | Pu |
-| uitin | hulpstukken   | deel zijn van    |     |              | nt |
-| g_Put | bij           | een (subtype     |     |              |    |
-|       | aansluiting   | van)             |     |              |    |
-|       |               | gwsw:Aansluiting |     |              |    |
-|       |               | en het kenmerk   |     |              |    |
-|       |               | gwsw:Punt hebben |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Aans  | Aan           | Individuen van   |     |              | Li |
-| luiti | sluitleiding, | het type         |     |              | jn |
-| ng_Le | goot          | (subtype van)    |     |              |    |
-| iding |               | gwsw             |     |              |    |
-|       |               | :Aansluitleiding |     |              |    |
-|       |               | of (subtype van) |     |              |    |
-|       |               | gwsw:Goot        |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-|       |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| *     |               |                  |     |              |    |
-| Geo-t |               |                  |     |              |    |
-| hema* |               |                  |     |              |    |
-| *     |               |                  |     |              |    |
-| Kenta |               |                  |     |              |    |
-| llen: |               |                  |     |              |    |
-| URL   |               |                  |     |              |    |
-| =*    |               |                  |     |              |    |
-| *h    |               |                  |     |              |    |
-| ttps: |               |                  |     |              |    |
-| //geo |               |                  |     |              |    |
-| data. |               |                  |     |              |    |
-| gwsw. |               |                  |     |              |    |
-| nl/{d |               |                  |     |              |    |
-| atase |               |                  |     |              |    |
-| t}/ke |               |                  |     |              |    |
-| ngeta |               |                  |     |              |    |
-| llen* |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| G     | Rio           | [P.M. (nog       |     | Naam,        | Bu |
-| ebied | leringsgebied | uitwerken, wordt |     | Leng         | it |
-|       |               | herzien in GWSW  |     | teLeidingen, | en |
-|       |               | 1.6)]{.mark}     |     | Buurten +    | -g |
-|       |               |                  |     | conform      | re |
-|       |               |                  |     | GWSW-RioKen  | ns |
-+-------+---------------+------------------+-----+--------------+----+
-| Buurt | Buurt met     | [P.M. (nog       |     | Naam,        | Bu |
-|       | CBS-gegevens  | uitwerken, wordt |     | Riole        | it |
-|       |               | herzien in GWSW  |     | ringsgebied, | en |
-|       |               | 1.6)]{.mark}     |     | Gemeente,    | -g |
-|       |               |                  |     | Wijk,        | re |
-|       |               |                  |     | Aan          | ns |
-|       |               |                  |     | talInwoners, |    |
-|       |               |                  |     | Aantal       |    |
-|       |               |                  |     | Huishoudens, |    |
-|       |               |                  |     | Aant         |    |
-|       |               |                  |     | alBedrijven, |    |
-|       |               |                  |     | Aan          |    |
-|       |               |                  |     | talRecreatie |    |
-+-------+---------------+------------------+-----+--------------+----+
-|       |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| *Geo- |               |                  |     |              |    |
-| thema |               |                  |     |              |    |
-| Nulme |               |                  |     |              |    |
-| ting: |               |                  |     |              |    |
-| URL   |               |                  |     |              |    |
-| =*    |               |                  |     |              |    |
-| *http |               |                  |     |              |    |
-| s://g |               |                  |     |              |    |
-| eodat |               |                  |     |              |    |
-| a.gws |               |                  |     |              |    |
-| w.nl/ |               |                  |     |              |    |
-| {data |               |                  |     |              |    |
-| set}/ |               |                  |     |              |    |
-| nulme |               |                  |     |              |    |
-| ting* |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Put   | Put in        | Rapportmeldingen |     | Naam,        | Pu |
-|       | rapport       | van het type     |     | Subtype,     | nt |
-|       | Nulmeting     | vali:Violation   |     | Type         |    |
-|       |               | en de property   |     | melding,     |    |
-|       |               | vali:punt        |     | Kenmerk,     |    |
-|       |               |                  |     | Opmerking    |    |
-+-------+---------------+------------------+-----+--------------+----+
-| Le    | Leiding in    | Rapportmeldingen |     | Naam,        | Li |
-| iding | rapport       | van het type     |     | Subtype,     | jn |
-|       | Nulmeting     | vali:Violation   |     | Type         |    |
-|       |               | en de property   |     | melding,     |    |
-|       |               | vali:lijn        |     | Kenmerk,     |    |
-|       |               |                  |     | Opmerking    |    |
-+-------+---------------+------------------+-----+--------------+----+
-|       |               |                  |     |              |    |
-+-------+---------------+------------------+-----+--------------+----+
+### Uitlevering naar PDOK 
+
+De GWSW Server heeft een verbinding met het PDOK platform. Op dit moment staat op PDOK de dataset Stedelijk Water (ook riolering), waarin het Geo-thema Beheer is opgenomen.
+
+Vanaf GWSW 1.6 start ook een proefneming met de uitlevering van aansluiting-gegevens, van enkele gemeenten (waaronder Den Haag) zijn die gegevens nu beschikbaar.
+
+Daarnaast is er de wens van het Waterschapshuis om de gegevens van de afvalwaterketen op een duidelijker plek (dataset) binnen PDOK te plaatsen.
+
+In de volgende tabel is een voorstel voor de PDOK presentatie opgenomen.
+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 46%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>PDOK dataset</th>
+<th>Opgenomen lagen (thema:laagnaam)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Stedelijk Water (ook riolering)</p>
+<p>(uitlevering inclusief Waterschapsgegevens)</p></td>
+<td><p>Beheer:Gebied</p>
+<p>Beheer:Bouwwerk</p>
+<p>Beheer:Put</p>
+<p>Beheer:Leiding</p>
+<p>Aansluiting:Aansluiting_Leiding</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Waterschappen Afvalwaterketen</p>
+<p>(uitlevering Waterschapsgegevens)</p></td>
+<td>In ontwikkeling ism het Waterschapshuis</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 ### Uitlevering naar PDOK 
 
@@ -835,27 +725,38 @@ plaatsen.
 
 In de volgende tabel is een voorstel voor de PDOK presentatie opgenomen.
 
-+----------------------+--------------------------------+-------------+
-| PDOK dataset         | Opgenomen lagen                |             |
-|                      | (thema:laagnaam)               |             |
-+======================+================================+=============+
-| Stedelijk Water (ook | Beheer:Gebied                  |             |
-| riolering)           |                                |             |
-|                      | Beheer:Bouwwerk                |             |
-| (uitlevering         |                                |             |
-| inclusief            | Beheer:Put                     |             |
-| Waterschapsgegevens) |                                |             |
-|                      | Beheer:Leiding                 |             |
-|                      |                                |             |
-|                      | A                              |             |
-|                      | ansluiting:Aansluiting_Leiding |             |
-+----------------------+--------------------------------+-------------+
-| Waterschappen        | In ontwikkeling ism het        |             |
-| Afvalwaterketen      | Waterschapshuis                |             |
-|                      |                                |             |
-| (uitlevering         |                                |             |
-| Waterschapsgegevens) |                                |             |
-+----------------------+--------------------------------+-------------+
+<table>
+<colgroup>
+<col style="width: 33%" />
+<col style="width: 46%" />
+<col style="width: 20%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>PDOK dataset</th>
+<th>Opgenomen lagen (thema:laagnaam)</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Stedelijk Water (ook riolering)</p>
+<p>(uitlevering inclusief Waterschapsgegevens)</p></td>
+<td><p>Beheer:Gebied</p>
+<p>Beheer:Bouwwerk</p>
+<p>Beheer:Put</p>
+<p>Beheer:Leiding</p>
+<p>Aansluiting:Aansluiting_Leiding</p></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Waterschappen Waterketen</p>
+<p>(uitlevering Waterschapsgegevens)</p></td>
+<td>In ontwikkeling ism het Waterschapshuis</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 ### Aanroep GWSW Geo (URI-strategie)
 
@@ -3960,8 +3861,7 @@ style="width:0.26042in;height:0.10417in" /></td>
 
 ### WFS Protocol
 
-![](media/image103.png){width="3.959722222222222in"
-height="2.504861111111111in"}
+<img src="media/image103.png" style="width:3.95972in;height:2.50486in" />
 
 De aanroep van GWSW Geo vanuit een GIS-applicatie (zoals QGIS) is
 eenvoudig. Geef in QGIS de WFS-verbinding een naam en vermeld vervolgens
@@ -3971,15 +3871,14 @@ de URL van GWSW Geo. Aan de URL alleen nog de te gebruiken dataset
 Vervolgens ontvangt QGIS van GWSW Geo een overzicht van de mogelijke
 GIS-lagen:
 
-![](media/image104.png){width="3.982638888888889in" height="2.51875in"}
+<img src="media/image104.png" style="width:3.98264in;height:2.51875in" />
 
 Na keuze van de lagen (selecteer ze allen en gebruik de knop
 "Toevoegen") maakt het GIS nieuwe gegevenslagen aan met daarin de
 opgevraagde gegevens. QGIS verwerkt hiertoe het door GWSW Geo
 aangeleverde GML-bestand.
 
-![](media/image105.png){width="3.542361111111111in"
-height="1.2090277777777778in"}
+<img src="media/image105.png" style="width:3.54236in;height:1.20903in" />
 
 Gebruik daarna zo nodig de knop A om in te zoomen op de nieuwe GIS-lagen
 en de knop B om gegevens (\"attributes\") op te vragen per object
@@ -4002,8 +3901,7 @@ De GWSW Server kan de geoinformatie van een dataset ook als GeoPackage
 leveren. Dat is ook relevant bij omvangrijke datasets. Een GeoPackage
 database is in QGIS (en andere GIS\'en) te openen:
 
-![](media/image106.png){width="3.940774278215223in"
-height="2.3227515310586178in"}
+<img src="media/image106.png" style="width:3.94077in;height:2.32275in" />
 
 ### Opmaken van datasets in QGIS
 
@@ -4018,8 +3916,7 @@ SLD's zijn direct te downloaden via
 Voor het toekennen van de styling aan de kaartlagen wordt vanuit de
 laageigenschappen de SLD geladen met de functie "Stijl laden"
 
-![](media/image107.png){width="7.033667979002625in"
-height="4.284143700787402in"}
+<img src="media/image107.png" style="width:7.033667979002625in;height:4.284143700787402in" />
 
 De opmaak wordt dan geactieveerd en de symbolen worden ingeladen vanaf
 de GWSW Server.
@@ -4030,9 +3927,7 @@ Dit kan hersteld worden door dubbel te klikken op de Default regel en
 het filter te veranderen in Anders, de filterwaarde ELSE wordt nu
 correct toegekend.
 
-![Afbeelding met tekst Automatisch gegenereerde
-beschrijving](media/image108.png){width="6.497222222222222in"
-height="4.182638888888889in"}
+<img src="media/image108.png" style="width:6.497222222222222in;height:4.182638888888889in" />
 
 Objecten die nu niet voldoen aan de filters voor de GWSW Geo symboliek
 krijgen de default styling mee. Hierdoor worden altijd alle aanwezige
@@ -4047,19 +3942,19 @@ Daarnaast is het mogelijk om de GWSW dataset via de Living Atlas in te
 laden en de styling hiervan te kopieren voor gebruik op een eigen
 dataset.
 
-![](media/image109.png){width="6.34375in" height="5.114455380577428in"}
+<img src="media/image109.png" style="width:6.34375in;height:5.114455380577428in" />
 
 Vervolgens kun je de op te maken laag selecteren en de symbologie
 bronlaag gebruiken om de styling te importeren. Let hierbij wel op dat
 je de juiste lagen aan elkaar koppelt, zodat Put styling op de laag Put
 wordt toegepast en niet op bijvoorbeeld de leidingen.
 
-![](media/image110.png){width="2.2689074803149607in" height="3.375in"}
+<img src="media/image110.png" style="width:2.2689074803149607in;height:3.375in" />
 
 Eenmaal de styling is toegepast heeft deze laag dezelfde opmaak als in
 de Living Atlas en op PDOK.
 
-![](media/image111.png){width="5.953607830271216in" height="4.8125in"}
+<img src="media/image111.png" style="width:5.953607830271216in;height:4.8125in" />
 
 ### Testen met WFS
 
@@ -4242,2139 +4137,1229 @@ met daarbij voorbeelden van de gebruikte symbolen.
 
 *Tabel: Soorten put*
 
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Soorten   | Veel      | N   | R   | An  | H   | Liz | Den | Sw  |
-| put GWSW  | gebruikte | LCS | ott | tea | HNK | ard | H   | eco |
-|           | ob        |     | er- | Gr  |     |     | aag |     |
-|           | jectnamen |     | dam | oup |     | (   |     |     |
-|           | in GIS    |     |     |     |     | geb |     |     |
-|           |           |     |     |     |     | ase |     |     |
-|           |           |     |     |     |     | erd |     |     |
-|           |           |     |     |     |     | op  |     |     |
-|           |           |     |     |     |     | A   |     |     |
-|           |           |     |     |     |     | quo |     |     |
-|           |           |     |     |     |     | s   |     |     |
-|           |           |     |     |     |     | tan |     |     |
-|           |           |     |     |     |     | daa |     |     |
-|           |           |     |     |     |     | rd) |     |     |
-+===========+===========+=====+=====+=====+=====+=====+=====+=====+
-| Ove       | Ove       | ![  | ![  | ![  | ![  | !   | ![  |     |
-| rstortput | rstortput | ](m | ](m | ](m | ](m | []( | ](m |     |
-|           |           | edi | edi | edi | edi | med | edi |     |
-| (s        |           | a/i | a/i | a/i | a/i | ia/ | a/i |     |
-| upertype) |           | mag | mag | mag | mag | ima | mag |     |
-|           |           | e11 | e11 | e11 | e11 | ge1 | e11 |     |
-|           |           | 2.p | 3.p | 4.p | 5.p | 16. | 7.p |     |
-|           |           | ng) | ng) | ng) | ng) | png | ng) |     |
-|           |           | {wi | {wi | {wi | {wi | ){w | {wi |     |
-|           |           | dth | dth | dth | dth | idt | dth |     |
-|           |           | ="0 | ="0 | ="0 | ="0 | h=" | ="0 |     |
-|           |           | .23 | .29 | .39 | .25 | 0.2 | .23 |     |
-|           |           | 916 | 170 | 639 | in" | 916 | 958 |     |
-|           |           | 229 | 713 | 654 | hei | 666 | 333 |     |
-|           |           | 221 | 035 | 418 | ght | 666 | 333 |     |
-|           |           | 347 | 870 | 197 | ="0 | 666 | 333 |     |
-|           |           | 332 | 516 | 723 | .20 | 667 | 334 |     |
-|           |           | in" | in" | in" | 833 | in" | in" |     |
-|           |           | he  | h   | h   | 333 | hei | h   |     |
-|           |           | igh | eig | eig | 333 | ght | eig |     |
-|           |           | t=" | ht= | ht= | 333 | ="0 | ht= |     |
-|           |           | 0.2 | "0. | "0. | 334 | .30 | "0. |     |
-|           |           | 361 | 291 | 387 | in" | 208 | 218 |     |
-|           |           | 111 | 707 | 387 | }(z | 333 | 75i |     |
-|           |           | 111 | 130 | 357 | elf | 333 | n"} |     |
-|           |           | 111 | 358 | 830 | de) | 333 |     |     |
-|           |           | 111 | 705 | 271 |     | 33i |     |     |
-|           |           | in" | 16i | 23i |     | n"} |     |     |
-|           |           | }B- | n"} | n"} |     |     |     |     |
-|           |           | SRI |     |     |     |     |     |     |
-|           |           | -PU |     |     |     |     |     |     |
-|           |           | T_O |     |     |     |     |     |     |
-|           |           | VER |     |     |     |     |     |     |
-|           |           | STO |     |     |     |     |     |     |
-|           |           | RT- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Pompput   | Pompput   | !   |     | ![  | ![  | !   | !   | ![  |
-|           |           | []( |     | ](m | ](m | []( | []( | ](m |
-| (         |           | med |     | edi | edi | med | med | edi |
-| supertype |           | ia/ |     | a/i | a/i | ia/ | ia/ | a/i |
-| van       |           | ima |     | mag | mag | ima | ima | mag |
-| Pompunit) |           | ge1 |     | e11 | e12 | ge1 | ge1 | e12 |
-|           |           | 18. |     | 9.p | 0.p | 21. | 22. | 3.p |
-|           |           | png |     | ng) | ng) | png | png | ng) |
-|           |           | ){w |     | {wi | {wi | ){w | ){w | {wi |
-|           |           | idt |     | dth | dth | idt | idt | dth |
-|           |           | h=" |     | ="0 | ="0 | h=" | h=" | ="0 |
-|           |           | 0.1 |     | .39 | .20 | 0.2 | 0.2 | .26 |
-|           |           | 912 |     | 639 | 833 | 604 | 708 | 601 |
-|           |           | 390 |     | 654 | 333 | 166 | 333 | 377 |
-|           |           | 638 |     | 418 | 333 | 666 | 333 | 952 |
-|           |           | 670 |     | 197 | 333 | 666 | 333 | 755 |
-|           |           | 166 |     | 723 | 334 | 667 | 333 | 906 |
-|           |           | in" |     | in" | in" | in" | in" | in" |
-|           |           | h   |     | h   | hei | h   | h   | hei |
-|           |           | eig |     | eig | ght | eig | eig | ght |
-|           |           | ht= |     | ht= | ="0 | ht= | ht= | ="0 |
-|           |           | "0. |     | "0. | .22 | "0. | "0. | .28 |
-|           |           | 189 |     | 387 | 916 | 283 | 229 | 263 |
-|           |           | 815 |     | 387 | 666 | 019 | 166 | 888 |
-|           |           | 179 |     | 357 | 666 | 466 | 666 | 888 |
-|           |           | 352 |     | 830 | 666 | 316 | 666 | 888 |
-|           |           | 580 |     | 271 | 666 | 710 | 666 | 89i |
-|           |           | 94i |     | 23i | in" | 43i | 66i | n"} |
-|           |           | n"} |     | n"} | }(z | n"} | n"} |     |
-|           |           | B-S |     |     | elf | (z  |     |     |
-|           |           | RI- |     |     | de) | elf |     |     |
-|           |           | PUT |     |     |     | de) |     |     |
-|           |           | _PO |     |     |     |     |     |     |
-|           |           | MPP |     |     |     |     |     |     |
-|           |           | UT- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Infil     | Infil     | N   |     | ![  | \-  | \-  | \-  |     |
-| tratieput | tratieput | iet |     | ](m |     |     |     |     |
-|           |           | aa  |     | edi |     |     |     |     |
-|           |           | nwe |     | a/i |     |     |     |     |
-|           |           | zig |     | mag |     |     |     |     |
-|           |           |     |     | e12 |     |     |     |     |
-|           |           |     |     | 4.p |     |     |     |     |
-|           |           |     |     | ng) |     |     |     |     |
-|           |           |     |     | {wi |     |     |     |     |
-|           |           |     |     | dth |     |     |     |     |
-|           |           |     |     | ="0 |     |     |     |     |
-|           |           |     |     | .40 |     |     |     |     |
-|           |           |     |     | 625 |     |     |     |     |
-|           |           |     |     | in" |     |     |     |     |
-|           |           |     |     | hei |     |     |     |     |
-|           |           |     |     | ght |     |     |     |     |
-|           |           |     |     | ="0 |     |     |     |     |
-|           |           |     |     | .36 |     |     |     |     |
-|           |           |     |     | 937 |     |     |     |     |
-|           |           |     |     | 007 |     |     |     |     |
-|           |           |     |     | 874 |     |     |     |     |
-|           |           |     |     | 015 |     |     |     |     |
-|           |           |     |     | 75i |     |     |     |     |
-|           |           |     |     | n"} |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Koppelput | !   |     | !   | \-  | \-  | !   |     |
-|           |           | []( |     | []( |     |     | []( |     |
-|           |           | med |     | med |     |     | med |     |
-|           |           | ia/ |     | ia/ |     |     | ia/ |     |
-|           |           | ima |     | ima |     |     | ima |     |
-|           |           | ge1 |     | ge1 |     |     | ge1 |     |
-|           |           | 25. |     | 26. |     |     | 27. |     |
-|           |           | jpg |     | png |     |     | png |     |
-|           |           | ){w |     | ){w |     |     | ){w |     |
-|           |           | idt |     | idt |     |     | idt |     |
-|           |           | h=" |     | h=" |     |     | h=" |     |
-|           |           | 0.2 |     | 0.4 |     |     | 0.2 |     |
-|           |           | 685 |     | 048 |     |     | 500 |     |
-|           |           | 181 |     | 611 |     |     | 349 |     |
-|           |           | 539 |     | 111 |     |     | 956 |     |
-|           |           | 807 |     | 111 |     |     | 255 |     |
-|           |           | 524 |     | 111 |     |     | 468 |     |
-|           |           | in" |     | in" |     |     | in" |     |
-|           |           | he  |     | hei |     |     | h   |     |
-|           |           | igh |     | ght |     |     | eig |     |
-|           |           | t=" |     | ="0 |     |     | ht= |     |
-|           |           | 0.2 |     | .33 |     |     | "0. |     |
-|           |           | 130 |     | 333 |     |     | 218 |     |
-|           |           | 479 |     | 333 |     |     | 780 |     |
-|           |           | 002 |     | 333 |     |     | 621 |     |
-|           |           | 624 |     | 333 |     |     | 172 |     |
-|           |           | 672 |     | 33i |     |     | 353 |     |
-|           |           | in" |     | n"} |     |     | 45i |     |
-|           |           | }B- |     |     |     |     | n"} |     |
-|           |           | SRI |     |     |     |     |     |     |
-|           |           | -PU |     |     |     |     |     |     |
-|           |           | T_K |     |     |     |     |     |     |
-|           |           | OPP |     |     |     |     |     |     |
-|           |           | ELP |     |     |     |     |     |     |
-|           |           | UT- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Rioolput  | Put       | ![  |     | !   | \-  | ![  | ![  |     |
-|           |           | ](m |     | []( |     | ](m | ](m |     |
-| (s        |           | edi |     | med |     | edi | edi |     |
-| upertype) |           | a/i |     | ia/ |     | a/i | a/i |     |
-|           |           | mag |     | ima |     | mag | mag |     |
-|           |           | e12 |     | ge1 |     | e13 | e13 |     |
-|           |           | 8.p |     | 29. |     | 0.p | 1.p |     |
-|           |           | ng) |     | png |     | ng) | ng) |     |
-|           |           | {wi |     | ){w |     | {wi | {wi |     |
-|           |           | dth |     | idt |     | dth | dth |     |
-|           |           | ="0 |     | h=" |     | ="0 | ="0 |     |
-|           |           | .23 |     | 0.3 |     | .17 | .22 |     |
-|           |           | 331 |     | 693 |     | 708 | 916 |     |
-|           |           | 911 |     | 700 |     | 333 | 666 |     |
-|           |           | 636 |     | 787 |     | 333 | 666 |     |
-|           |           | 045 |     | 401 |     | 333 | 666 |     |
-|           |           | 494 |     | 575 |     | 334 | 666 |     |
-|           |           | in" |     | in" |     | in" | in" |     |
-|           |           | he  |     | hei |     | hei | h   |     |
-|           |           | igh |     | ght |     | ght | eig |     |
-|           |           | t=" |     | ="0 |     | ="0 | ht= |     |
-|           |           | 0.2 |     | .33 |     | .26 | "0. |     |
-|           |           | 175 |     | 333 |     | 041 | 229 |     |
-|           |           | 929 |     | 333 |     | 666 | 166 |     |
-|           |           | 571 |     | 333 |     | 666 | 666 |     |
-|           |           | 303 |     | 333 |     | 666 | 666 |     |
-|           |           | 587 |     | 33i |     | 67i | 666 |     |
-|           |           | in" |     | n"} |     | n"} | 66i |     |
-|           |           | }B- |     |     |     |     | n"} |     |
-|           |           | SRI |     |     |     |     |     |     |
-|           |           | -PU |     |     |     |     |     |     |
-|           |           | T_K |     |     |     |     |     |     |
-|           |           | UNS |     |     |     |     |     |     |
-|           |           | TST |     |     |     |     |     |     |
-|           |           | OF- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Ove       | Ove       | N   |     |     | ![] | \-  | \-  |     |
-| rnamepunt | rnamepunt | iet |     |     | (me |     |     |     |
-|           |           | aa  |     |     | dia |     |     |     |
-|           |           | nwe |     |     | /im |     |     |     |
-|           |           | zig |     |     | age |     |     |     |
-|           |           |     |     |     | 132 |     |     |     |
-|           |           |     |     |     | .pn |     |     |     |
-|           |           |     |     |     | g){ |     |     |     |
-|           |           |     |     |     | wid |     |     |     |
-|           |           |     |     |     | th= |     |     |     |
-|           |           |     |     |     | "0. |     |     |     |
-|           |           |     |     |     | 875 |     |     |     |
-|           |           |     |     |     | in" |     |     |     |
-|           |           |     |     |     | hei |     |     |     |
-|           |           |     |     |     | ght |     |     |     |
-|           |           |     |     |     | ="0 |     |     |     |
-|           |           |     |     |     | .41 |     |     |     |
-|           |           |     |     |     | 666 |     |     |     |
-|           |           |     |     |     | 666 |     |     |     |
-|           |           |     |     |     | 666 |     |     |     |
-|           |           |     |     |     | 666 |     |     |     |
-|           |           |     |     |     | 67i |     |     |     |
-|           |           |     |     |     | n"} |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Ins       | Ins       | ![  | ![  |     | ![  | \-  | ![  | ![  |
-| pectieput | pectieput | ](m | ](m |     | ](m |     | ](m | ](m |
-|           | (per      | edi | edi |     | edi |     | edi | edi |
-|           | sleiding) | a/i | a/i |     | a/i |     | a/i | a/i |
-|           |           | mag | mag |     | mag |     | mag | mag |
-|           |           | e13 | e13 |     | e13 |     | e13 | e13 |
-|           |           | 3.p | 4.p |     | 5.p |     | 6.p | 7.p |
-|           |           | ng) | ng) |     | ng) |     | ng) | ng) |
-|           |           | {wi | {wi |     | {wi |     | {wi | {wi |
-|           |           | dth | dth |     | dth |     | dth | dth |
-|           |           | ="0 | ="0 |     | ="0 |     | ="0 | ="0 |
-|           |           | .23 | .22 |     | .23 |     | .34 | .24 |
-|           |           | 983 | 916 |     | 958 |     | 379 | 003 |
-|           |           | 814 | 666 |     | 333 |     | 811 | 390 |
-|           |           | 523 | 666 |     | 333 |     | 898 | 201 |
-|           |           | 184 | 666 |     | 333 |     | 512 | 224 |
-|           |           | 602 | 666 |     | 334 |     | 685 | 847 |
-|           |           | in" | in" |     | in" |     | in" | in" |
-|           |           | hei | hei |     | hei |     | h   | h   |
-|           |           | ght | ght |     | ght |     | eig | eig |
-|           |           | ="0 | ="0 |     | ="0 |     | ht= | ht= |
-|           |           | .24 | .26 |     | .27 |     | "0. | "0. |
-|           |           | 537 | 041 |     | 083 |     | 208 | 264 |
-|           |           | 073 | 666 |     | 333 |     | 362 | 865 |
-|           |           | 490 | 666 |     | 333 |     | 860 | 485 |
-|           |           | 813 | 666 |     | 333 |     | 892 | 564 |
-|           |           | 65i | 67i |     | 33i |     | 388 | 304 |
-|           |           | n"} | n"} |     | n"} |     | 45i | 45i |
-|           |           | SRI | Kno |     |     |     | n"} | n"} |
-|           |           | -PU | opp |     |     |     |     |     |
-|           |           | T_I | unt |     |     |     |     |     |
-|           |           | NSP | rio |     |     |     |     |     |
-|           |           | ECT | ler |     |     |     |     |     |
-|           |           | IE- | ing |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Beerput   |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Doo       |           |     |     |     |     |     |     |     |
-| rspoelput |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Dr        |           |     | ![  |     |     |     | ![  |     |
-| ainageput |           |     | ](m |     |     |     | ](m |     |
-|           |           |     | edi |     |     |     | edi |     |
-|           |           |     | a/i |     |     |     | a/i |     |
-|           |           |     | mag |     |     |     | mag |     |
-|           |           |     | e13 |     |     |     | e13 |     |
-|           |           |     | 8.p |     |     |     | 9.p |     |
-|           |           |     | ng) |     |     |     | ng) |     |
-|           |           |     | {wi |     |     |     | {wi |     |
-|           |           |     | dth |     |     |     | dth |     |
-|           |           |     | ="0 |     |     |     | ="0 |     |
-|           |           |     | .35 |     |     |     | .27 |     |
-|           |           |     | 421 |     |     |     | 087 |     |
-|           |           |     | 587 |     |     |     | 160 |     |
-|           |           |     | 926 |     |     |     | 979 |     |
-|           |           |     | 509 |     |     |     | 877 |     |
-|           |           |     | 185 |     |     |     | 517 |     |
-|           |           |     | in" |     |     |     | in" |     |
-|           |           |     | h   |     |     |     | hei |     |
-|           |           |     | eig |     |     |     | ght |     |
-|           |           |     | ht= |     |     |     | ="0 |     |
-|           |           |     | "0. |     |     |     | .17 |     |
-|           |           |     | 270 |     |     |     | 710 |     |
-|           |           |     | 871 |     |     |     | 848 |     |
-|           |           |     | 609 |     |     |     | 643 |     |
-|           |           |     | 798 |     |     |     | 919 |     |
-|           |           |     | 775 |     |     |     | 51i |     |
-|           |           |     | 17i |     |     |     | n"} |     |
-|           |           |     | n"} |     |     |     |     |     |
-|           |           |     |     |     |     |     |     |     |
-|           |           |     | Kno |     |     |     |     |     |
-|           |           |     | opp |     |     |     |     |     |
-|           |           |     | unt |     |     |     |     |     |
-|           |           |     | dr  |     |     |     |     |     |
-|           |           |     | ain |     |     |     |     |     |
-|           |           |     | age |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Erfafsche |           |     |     |     |     |     |     |     |
-| idingsput |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Externe   | Externe   | !   |     | !   | ![  | !   | ![  | !   |
-| ove       | Ove       | []( |     | []( | ](m | []( | ](m | []( |
-| rstortput | rstortput | med |     | med | edi | med | edi | med |
-|           |           | ia/ |     | ia/ | a/i | ia/ | a/i | ia/ |
-|           |           | ima |     | ima | mag | ima | mag | ima |
-|           |           | ge1 |     | ge1 | e11 | ge1 | e11 | ge1 |
-|           |           | 40. |     | 41. | 5.p | 16. | 7.p | 43. |
-|           |           | png |     | png | ng) | png | ng) | png |
-|           |           | ){w |     | ){w | {wi | ){w | {wi | ){w |
-|           |           | idt |     | idt | dth | idt | dth | idt |
-|           |           | h=" |     | h=" | ="0 | h=" | ="0 | h=" |
-|           |           | 0.2 |     | 0.3 | .25 | 0.2 | .23 | 0.3 |
-|           |           | 157 |     | 958 | in" | 916 | 958 | 423 |
-|           |           | 163 |     | 333 | h   | 666 | 333 | 611 |
-|           |           | 167 |     | 333 | eig | 666 | 333 | 111 |
-|           |           | 104 |     | 333 | ht= | 666 | 333 | 111 |
-|           |           | 112 |     | 333 | "0. | 667 | 334 | 111 |
-|           |           | in" |     | in" | 208 | in" | in" | in" |
-|           |           | hei |     | h   | 333 | hei | h   | h   |
-|           |           | ght |     | eig | 333 | ght | eig | eig |
-|           |           | ="0 |     | ht= | 333 | ="0 | ht= | ht= |
-|           |           | .21 |     | "0. | 333 | .30 | "0. | "0. |
-|           |           | 296 |     | 387 | 34i | 208 | 218 | 258 |
-|           |           | 369 |     | 387 | n"} | 333 | 75i | 333 |
-|           |           | 203 |     | 357 |     | 333 | n"} | 333 |
-|           |           | 849 |     | 830 |     | 333 |     | 333 |
-|           |           | 52i |     | 271 |     | 33i |     | 333 |
-|           |           | n"} |     | 23i |     | n"} |     | 36i |
-|           |           | B-  |     | n"} |     | r   |     | n"} |
-|           |           | SRI |     |     |     | ood |     |     |
-|           |           | -PU |     |     |     | =   |     |     |
-|           |           | T_O |     |     |     | met |     |     |
-|           |           | VER |     |     |     | met |     |     |
-|           |           | STO |     |     |     | ing |     |     |
-|           |           | RT- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     | ![  |     |     |
-|           |           | dwg |     |     |     | ](m |     |     |
-|           |           |     |     |     |     | edi |     |     |
-|           |           |     |     |     |     | a/i |     |     |
-|           |           |     |     |     |     | mag |     |     |
-|           |           |     |     |     |     | e14 |     |     |
-|           |           |     |     |     |     | 2.p |     |     |
-|           |           |     |     |     |     | ng) |     |     |
-|           |           |     |     |     |     | {wi |     |     |
-|           |           |     |     |     |     | dth |     |     |
-|           |           |     |     |     |     | ="0 |     |     |
-|           |           |     |     |     |     | .25 |     |     |
-|           |           |     |     |     |     | in" |     |     |
-|           |           |     |     |     |     | hei |     |     |
-|           |           |     |     |     |     | ght |     |     |
-|           |           |     |     |     |     | ="0 |     |     |
-|           |           |     |     |     |     | .27 |     |     |
-|           |           |     |     |     |     | 083 |     |     |
-|           |           |     |     |     |     | 333 |     |     |
-|           |           |     |     |     |     | 333 |     |     |
-|           |           |     |     |     |     | 333 |     |     |
-|           |           |     |     |     |     | 33i |     |     |
-|           |           |     |     |     |     | n"} |     |     |
-|           |           |     |     |     |     | zw  |     |     |
-|           |           |     |     |     |     | art |     |     |
-|           |           |     |     |     |     | =   |     |     |
-|           |           |     |     |     |     | zon |     |     |
-|           |           |     |     |     |     | der |     |     |
-|           |           |     |     |     |     | met |     |     |
-|           |           |     |     |     |     | ing |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Filterput |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Interne   | Interne   | ![  |     | ![  | ![  | !   | !   | !   |
-| ove       | Overstort | ](m |     | ](m | ](m | []( | []( | []( |
-| rstortput |           | edi |     | edi | edi | med | med | med |
-|           |           | a/i |     | a/i | a/i | ia/ | ia/ | ia/ |
-|           |           | mag |     | mag | mag | ima | ima | ima |
-|           |           | e14 |     | e14 | e11 | ge1 | ge1 | ge1 |
-|           |           | 4.p |     | 5.p | 5.p | 16. | 46. | 47. |
-|           |           | ng) |     | ng) | ng) | png | png | png |
-|           |           | {wi |     | {wi | {wi | ){w | ){w | ){w |
-|           |           | dth |     | dth | dth | idt | idt | idt |
-|           |           | ="0 |     | ="0 | ="0 | h=" | h=" | h=" |
-|           |           | .21 |     | .40 | .25 | 0.2 | 0.2 | 0.3 |
-|           |           | 180 |     | 625 | in" | 916 | 708 | 423 |
-|           |           | 555 |     | in" | hei | 666 | 333 | 611 |
-|           |           | 555 |     | h   | ght | 666 | 333 | 111 |
-|           |           | 555 |     | eig | ="0 | 666 | 333 | 111 |
-|           |           | 555 |     | ht= | .20 | 667 | 333 | 111 |
-|           |           | in" |     | "0. | 833 | in" | in" | in" |
-|           |           | hei |     | 378 | 333 | he  | hei | h   |
-|           |           | ght |     | 379 | 333 | igh | ght | eig |
-|           |           | ="0 |     | 265 | 333 | t=" | ="0 | ht= |
-|           |           | .20 |     | 091 | 334 | 0.3 | .27 | "0. |
-|           |           | 910 |     | 863 | in" | 020 | 083 | 273 |
-|           |           | 323 |     | 54i | }(z | 833 | 333 | 611 |
-|           |           | 709 |     | n"} | elf | 333 | 333 | 111 |
-|           |           | 536 |     |     | de) | 333 | 333 | 111 |
-|           |           | 308 |     |     |     | 333 | 33i | 111 |
-|           |           | in" |     |     |     | in" | n"} | 14i |
-|           |           | }B- |     |     |     | }(z |     | n"} |
-|           |           | SRI |     |     |     | elf |     |     |
-|           |           | -PU |     |     |     | de) |     |     |
-|           |           | T_O |     |     |     |     |     |     |
-|           |           | VER |     |     |     |     |     |     |
-|           |           | STO |     |     |     |     |     |     |
-|           |           | RT- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Stuwput   |           |     |     |     |     |     | !   | !   |
-|           |           |     |     |     |     |     | []( | []( |
-|           |           |     |     |     |     |     | med | med |
-|           |           |     |     |     |     |     | ia/ | ia/ |
-|           |           |     |     |     |     |     | ima | ima |
-|           |           |     |     |     |     |     | ge1 | ge1 |
-|           |           |     |     |     |     |     | 48. | 49. |
-|           |           |     |     |     |     |     | png | png |
-|           |           |     |     |     |     |     | ){w | ){w |
-|           |           |     |     |     |     |     | idt | idt |
-|           |           |     |     |     |     |     | h=" | h=" |
-|           |           |     |     |     |     |     | 0.2 | 0.3 |
-|           |           |     |     |     |     |     | 604 | 423 |
-|           |           |     |     |     |     |     | 527 | 611 |
-|           |           |     |     |     |     |     | 559 | 111 |
-|           |           |     |     |     |     |     | 055 | 111 |
-|           |           |     |     |     |     |     | 118 | 111 |
-|           |           |     |     |     |     |     | in" | in" |
-|           |           |     |     |     |     |     | h   | hei |
-|           |           |     |     |     |     |     | eig | ght |
-|           |           |     |     |     |     |     | ht= | ="0 |
-|           |           |     |     |     |     |     | "0. | .30 |
-|           |           |     |     |     |     |     | 229 | 902 |
-|           |           |     |     |     |     |     | 198 | 777 |
-|           |           |     |     |     |     |     | 381 | 777 |
-|           |           |     |     |     |     |     | 452 | 777 |
-|           |           |     |     |     |     |     | 318 | 78i |
-|           |           |     |     |     |     |     | 47i | n"} |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Kolk      |           |     |     |     |     |     | ![  |     |
-|           |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e15 |     |
-|           |           |     |     |     |     |     | 0.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .18 |     |
-|           |           |     |     |     |     |     | 532 |     |
-|           |           |     |     |     |     |     | 808 |     |
-|           |           |     |     |     |     |     | 398 |     |
-|           |           |     |     |     |     |     | 950 |     |
-|           |           |     |     |     |     |     | 132 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | hei |     |
-|           |           |     |     |     |     |     | ght |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .12 |     |
-|           |           |     |     |     |     |     | 972 |     |
-|           |           |     |     |     |     |     | 987 |     |
-|           |           |     |     |     |     |     | 751 |     |
-|           |           |     |     |     |     |     | 531 |     |
-|           |           |     |     |     |     |     | 06i |     |
-|           |           |     |     |     |     |     | n"} |     |
-|           |           |     |     |     |     |     | ![  |     |
-|           |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e15 |     |
-|           |           |     |     |     |     |     | 1.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .21 |     |
-|           |           |     |     |     |     |     | 621 |     |
-|           |           |     |     |     |     |     | 609 |     |
-|           |           |     |     |     |     |     | 798 |     |
-|           |           |     |     |     |     |     | 775 |     |
-|           |           |     |     |     |     |     | 154 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | h   |     |
-|           |           |     |     |     |     |     | eig |     |
-|           |           |     |     |     |     |     | ht= |     |
-|           |           |     |     |     |     |     | "0. |     |
-|           |           |     |     |     |     |     | 141 |     |
-|           |           |     |     |     |     |     | 657 |     |
-|           |           |     |     |     |     |     | 917 |     |
-|           |           |     |     |     |     |     | 760 |     |
-|           |           |     |     |     |     |     | 279 |     |
-|           |           |     |     |     |     |     | 97i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Kru       |           |     | !   |     |     |     | ![  |     |
-| isingsput |           |     | []( |     |     |     | ](m |     |
-|           |           |     | med |     |     |     | edi |     |
-|           |           |     | ia/ |     |     |     | a/i |     |
-|           |           |     | ima |     |     |     | mag |     |
-|           |           |     | ge1 |     |     |     | e15 |     |
-|           |           |     | 52. |     |     |     | 3.p |     |
-|           |           |     | png |     |     |     | ng) |     |
-|           |           |     | ){w |     |     |     | {wi |     |
-|           |           |     | idt |     |     |     | dth |     |
-|           |           |     | h=" |     |     |     | ="0 |     |
-|           |           |     | 0.2 |     |     |     | .28 |     |
-|           |           |     | 396 |     |     |     | 128 |     |
-|           |           |     | 172 |     |     |     | 937 |     |
-|           |           |     | 353 |     |     |     | 007 |     |
-|           |           |     | 455 |     |     |     | 874 |     |
-|           |           |     | 818 |     |     |     | 016 |     |
-|           |           |     | in" |     |     |     | in" |     |
-|           |           |     | h   |     |     |     | hei |     |
-|           |           |     | eig |     |     |     | ght |     |
-|           |           |     | ht= |     |     |     | ="0 |     |
-|           |           |     | "0. |     |     |     | .23 |     |
-|           |           |     | 270 |     |     |     | 961 |     |
-|           |           |     | 871 |     |     |     | 723 |     |
-|           |           |     | 609 |     |     |     | 534 |     |
-|           |           |     | 798 |     |     |     | 558 |     |
-|           |           |     | 775 |     |     |     | 18i |     |
-|           |           |     | 17i |     |     |     | n"} |     |
-|           |           |     | n"} |     |     |     |     |     |
-|           |           |     |     |     |     |     |     |     |
-|           |           |     | Kr  |     |     |     |     |     |
-|           |           |     | uis |     |     |     |     |     |
-|           |           |     | put |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| L         |           |     |     |     |     |     |     |     |
-| ozingsput |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Noodove   |           |     |     |     |     |     |     |     |
-| rstortput |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Ontsto    |           |     |     |     |     |     |     |     |
-| ppingsput |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Pompunit  |           |     |     |     |     |     | ![  |     |
-|           |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e15 |     |
-|           |           |     |     |     |     |     | 4.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .28 |     |
-|           |           |     |     |     |     |     | 128 |     |
-|           |           |     |     |     |     |     | 937 |     |
-|           |           |     |     |     |     |     | 007 |     |
-|           |           |     |     |     |     |     | 874 |     |
-|           |           |     |     |     |     |     | 016 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | hei |     |
-|           |           |     |     |     |     |     | ght |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .25 |     |
-|           |           |     |     |     |     |     | 003 |     |
-|           |           |     |     |     |     |     | 499 |     |
-|           |           |     |     |     |     |     | 562 |     |
-|           |           |     |     |     |     |     | 554 |     |
-|           |           |     |     |     |     |     | 68i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| R         |           |     |     |     |     |     |     |     |
-| einigende |           |     |     |     |     |     |     |     |
-| put       |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Slokop    |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Vacuümo   |           |     |     |     |     |     |     |     |
-| pslagtank |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| V         |           |     |     |     |     |     |     |     |
-| erbeterde |           |     |     |     |     |     |     |     |
-| ove       |           |     |     |     |     |     |     |     |
-| rstortput |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Wervelput |           |     | !   |     |     |     |     |     |
-|           |           |     | []( |     |     |     |     |     |
-|           |           |     | med |     |     |     |     |     |
-|           |           |     | ia/ |     |     |     |     |     |
-|           |           |     | ima |     |     |     |     |     |
-|           |           |     | ge1 |     |     |     |     |     |
-|           |           |     | 55. |     |     |     |     |     |
-|           |           |     | png |     |     |     |     |     |
-|           |           |     | ){w |     |     |     |     |     |
-|           |           |     | idt |     |     |     |     |     |
-|           |           |     | h=" |     |     |     |     |     |
-|           |           |     | 0.3 |     |     |     |     |     |
-|           |           |     | 125 |     |     |     |     |     |
-|           |           |     | 437 |     |     |     |     |     |
-|           |           |     | 445 |     |     |     |     |     |
-|           |           |     | 319 |     |     |     |     |     |
-|           |           |     | 335 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | h   |     |     |     |     |     |
-|           |           |     | eig |     |     |     |     |     |
-|           |           |     | ht= |     |     |     |     |     |
-|           |           |     | "0. |     |     |     |     |     |
-|           |           |     | 270 |     |     |     |     |     |
-|           |           |     | 871 |     |     |     |     |     |
-|           |           |     | 609 |     |     |     |     |     |
-|           |           |     | 798 |     |     |     |     |     |
-|           |           |     | 775 |     |     |     |     |     |
-|           |           |     | 17i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-|           |           |     |     |     |     |     |     |     |
-|           |           |     | W   |     |     |     |     |     |
-|           |           |     | erv |     |     |     |     |     |
-|           |           |     | elv |     |     |     |     |     |
-|           |           |     | ent |     |     |     |     |     |
-|           |           |     | iel |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Zinkerput |           |     |     |     |     |     | ![  |     |
-|           |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e15 |     |
-|           |           |     |     |     |     |     | 6.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .27 |     |
-|           |           |     |     |     |     |     | 087 |     |
-|           |           |     |     |     |     |     | 160 |     |
-|           |           |     |     |     |     |     | 979 |     |
-|           |           |     |     |     |     |     | 877 |     |
-|           |           |     |     |     |     |     | 517 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | h   |     |
-|           |           |     |     |     |     |     | eig |     |
-|           |           |     |     |     |     |     | ht= |     |
-|           |           |     |     |     |     |     | "0. |     |
-|           |           |     |     |     |     |     | 208 |     |
-|           |           |     |     |     |     |     | 362 |     |
-|           |           |     |     |     |     |     | 860 |     |
-|           |           |     |     |     |     |     | 892 |     |
-|           |           |     |     |     |     |     | 388 |     |
-|           |           |     |     |     |     |     | 45i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Verdekte  |           |     | ![  |     |     |     | !   |     |
-| put       |           |     | ](m |     |     |     | []( |     |
-|           |           |     | edi |     |     |     | med |     |
-|           |           |     | a/i |     |     |     | ia/ |     |
-|           |           |     | mag |     |     |     | ima |     |
-|           |           |     | e15 |     |     |     | ge1 |     |
-|           |           |     | 7.p |     |     |     | 58. |     |
-|           |           |     | ng) |     |     |     | png |     |
-|           |           |     | {wi |     |     |     | ){w |     |
-|           |           |     | dth |     |     |     | idt |     |
-|           |           |     | ="0 |     |     |     | h=" |     |
-|           |           |     | .19 |     |     |     | 0.3 |     |
-|           |           |     | 791 |     |     |     | 021 |     |
-|           |           |     | 666 |     |     |     | 259 |     |
-|           |           |     | 666 |     |     |     | 842 |     |
-|           |           |     | 666 |     |     |     | 519 |     |
-|           |           |     | 666 |     |     |     | 685 |     |
-|           |           |     | in" |     |     |     | in" |     |
-|           |           |     | h   |     |     |     | h   |     |
-|           |           |     | eig |     |     |     | eig |     |
-|           |           |     | ht= |     |     |     | ht= |     |
-|           |           |     | "0. |     |     |     | "0. |     |
-|           |           |     | 177 |     |     |     | 218 |     |
-|           |           |     | 083 |     |     |     | 780 |     |
-|           |           |     | 333 |     |     |     | 621 |     |
-|           |           |     | 333 |     |     |     | 172 |     |
-|           |           |     | 333 |     |     |     | 353 |     |
-|           |           |     | 34i |     |     |     | 45i |     |
-|           |           |     | n"} |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Berry     |     | ![  |     |     |     |     |     |
-|           |           |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e15 |     |     |     |     |     |
-|           |           |     | 9.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .22 |     |     |     |     |     |
-|           |           |     | 919 |     |     |     |     |     |
-|           |           |     | 838 |     |     |     |     |     |
-|           |           |     | 145 |     |     |     |     |     |
-|           |           |     | 231 |     |     |     |     |     |
-|           |           |     | 847 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | h   |     |     |     |     |     |
-|           |           |     | eig |     |     |     |     |     |
-|           |           |     | ht= |     |     |     |     |     |
-|           |           |     | "0. |     |     |     |     |     |
-|           |           |     | 197 |     |     |     |     |     |
-|           |           |     | 944 |     |     |     |     |     |
-|           |           |     | 006 |     |     |     |     |     |
-|           |           |     | 999 |     |     |     |     |     |
-|           |           |     | 125 |     |     |     |     |     |
-|           |           |     | 12i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Buiten    |     | ![  |     |     |     |     |     |
-|           | bedrijf   |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e16 |     |     |     |     |     |
-|           |           |     | 0.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .22 |     |     |     |     |     |
-|           |           |     | 919 |     |     |     |     |     |
-|           |           |     | 838 |     |     |     |     |     |
-|           |           |     | 145 |     |     |     |     |     |
-|           |           |     | 231 |     |     |     |     |     |
-|           |           |     | 847 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | h   |     |     |     |     |     |
-|           |           |     | eig |     |     |     |     |     |
-|           |           |     | ht= |     |     |     |     |     |
-|           |           |     | "0. |     |     |     |     |     |
-|           |           |     | 229 |     |     |     |     |     |
-|           |           |     | 198 |     |     |     |     |     |
-|           |           |     | 381 |     |     |     |     |     |
-|           |           |     | 452 |     |     |     |     |     |
-|           |           |     | 318 |     |     |     |     |     |
-|           |           |     | 47i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         |           |     | !   |     |     |     |     |     |
-| P         |           |     | []( |     |     |     |     |     |
-| erceelaan |           |     | med |     |     |     |     |     |
-| sluitpunt |           |     | ia/ |     |     |     |     |     |
-|           |           |     | ima |     |     |     |     |     |
-|           |           |     | ge1 |     |     |     |     |     |
-|           |           |     | 61. |     |     |     |     |     |
-|           |           |     | png |     |     |     |     |     |
-|           |           |     | ){w |     |     |     |     |     |
-|           |           |     | idt |     |     |     |     |     |
-|           |           |     | h=" |     |     |     |     |     |
-|           |           |     | 0.3 |     |     |     |     |     |
-|           |           |     | 854 |     |     |     |     |     |
-|           |           |     | 166 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 667 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | hei |     |     |     |     |     |
-|           |           |     | ght |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .33 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 33i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-|           |           |     |     |     |     |     |     |     |
-|           |           |     | I   |     |     |     |     |     |
-|           |           |     | npr |     |     |     |     |     |
-|           |           |     | ikp |     |     |     |     |     |
-|           |           |     | unt |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Ui        |           |     | !   |     |     |     |     |     |
-| tlaatpunt |           |     | []( |     |     |     |     |     |
-|           |           |     | med |     |     |     |     |     |
-|           |           |     | ia/ |     |     |     |     |     |
-|           |           |     | ima |     |     |     |     |     |
-|           |           |     | ge1 |     |     |     |     |     |
-|           |           |     | 62. |     |     |     |     |     |
-|           |           |     | png |     |     |     |     |     |
-|           |           |     | ){w |     |     |     |     |     |
-|           |           |     | idt |     |     |     |     |     |
-|           |           |     | h=" |     |     |     |     |     |
-|           |           |     | 0.2 |     |     |     |     |     |
-|           |           |     | 604 |     |     |     |     |     |
-|           |           |     | 527 |     |     |     |     |     |
-|           |           |     | 559 |     |     |     |     |     |
-|           |           |     | 055 |     |     |     |     |     |
-|           |           |     | 118 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | hei |     |     |     |     |     |
-|           |           |     | ght |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .23 |     |     |     |     |     |
-|           |           |     | 961 |     |     |     |     |     |
-|           |           |     | 723 |     |     |     |     |     |
-|           |           |     | 534 |     |     |     |     |     |
-|           |           |     | 558 |     |     |     |     |     |
-|           |           |     | 18i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-|           |           |     |     |     |     |     |     |     |
-|           |           |     | U   |     |     |     |     |     |
-|           |           |     | its |     |     |     |     |     |
-|           |           |     | tro |     |     |     |     |     |
-|           |           |     | omp |     |     |     |     |     |
-|           |           |     | unt |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Nog te    |     | ![  |     |     |     |     |     |
-|           | verwerken |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e16 |     |     |     |     |     |
-|           |           |     | 3.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .22 |     |     |     |     |     |
-|           |           |     | 919 |     |     |     |     |     |
-|           |           |     | 838 |     |     |     |     |     |
-|           |           |     | 145 |     |     |     |     |     |
-|           |           |     | 231 |     |     |     |     |     |
-|           |           |     | 847 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | h   |     |     |     |     |     |
-|           |           |     | eig |     |     |     |     |     |
-|           |           |     | ht= |     |     |     |     |     |
-|           |           |     | "0. |     |     |     |     |     |
-|           |           |     | 270 |     |     |     |     |     |
-|           |           |     | 871 |     |     |     |     |     |
-|           |           |     | 609 |     |     |     |     |     |
-|           |           |     | 798 |     |     |     |     |     |
-|           |           |     | 775 |     |     |     |     |     |
-|           |           |     | 17i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Pa        |     | ![  |     |     |     |     |     |
-|           | rticulier |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e16 |     |     |     |     |     |
-|           |           |     | 4.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .33 |     |     |     |     |     |
-|           |           |     | 338 |     |     |     |     |     |
-|           |           |     | 035 |     |     |     |     |     |
-|           |           |     | 870 |     |     |     |     |     |
-|           |           |     | 516 |     |     |     |     |     |
-|           |           |     | 186 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | h   |     |     |     |     |     |
-|           |           |     | eig |     |     |     |     |     |
-|           |           |     | ht= |     |     |     |     |     |
-|           |           |     | "0. |     |     |     |     |     |
-|           |           |     | 281 |     |     |     |     |     |
-|           |           |     | 289 |     |     |     |     |     |
-|           |           |     | 370 |     |     |     |     |     |
-|           |           |     | 078 |     |     |     |     |     |
-|           |           |     | 740 |     |     |     |     |     |
-|           |           |     | 16i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-|           |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Soorten put GWSW</th>
+<th>Veel gebruikte objectnamen in GIS</th>
+<th>NLCS</th>
+<th>Rotter-dam</th>
+<th>Antea Group</th>
+<th>HHNK</th>
+<th><p>Lizard</p>
+<p>(gebaseerd op Aquo standaard)</p></th>
+<th>Den Haag</th>
+<th>Sweco</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><p>Overstortput</p>
+<p>(supertype)</p></td>
+<td>Overstortput</td>
+<td><img src="media/image110.png" style="width:0.23916in;height:0.23611in" />B-SRI-PUT_OVERSTORT-SO.dwg</td>
+<td><img src="media/image111.png" style="width:0.29171in;height:0.29171in" /></td>
+<td><img src="media/image112.png" style="width:0.3964in;height:0.38739in" /></td>
+<td><img src="media/image113.png" style="width:0.25in;height:0.20833in" />(zelfde)</td>
+<td><img src="media/image114.png" style="width:0.29167in;height:0.30208in" /></td>
+<td><img src="media/image115.png" style="width:0.23958in;height:0.21875in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td><p>Pompput</p>
+<p>(supertype van Pompunit)</p></td>
+<td>Pompput</td>
+<td><img src="media/image116.png" style="width:0.19124in;height:0.18982in" />B-SRI-PUT_POMPPUT-SO.dwg</td>
+<td></td>
+<td><img src="media/image117.png" style="width:0.3964in;height:0.38739in" /></td>
+<td><img src="media/image118.png" style="width:0.20833in;height:0.22917in" />(zelfde)</td>
+<td><img src="media/image119.png" style="width:0.26042in;height:0.28302in" /> (zelfde)</td>
+<td><img src="media/image120.png" style="width:0.27083in;height:0.22917in" /></td>
+<td><img src="media/image121.png" style="width:0.26601in;height:0.28264in" /></td>
+</tr>
+<tr class="odd">
+<td>Infiltratieput</td>
+<td>Infiltratieput</td>
+<td>Niet aanwezig</td>
+<td></td>
+<td><img src="media/image122.png" style="width:0.40625in;height:0.36937in" /></td>
+<td>-</td>
+<td>-</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Koppelput</td>
+<td><img src="media/image123.jpg" style="width:0.26852in;height:0.21305in" />B-SRI-PUT_KOPPELPUT-SO.dwg</td>
+<td></td>
+<td><img src="media/image124.png" style="width:0.40486in;height:0.33333in" /></td>
+<td>-</td>
+<td>-</td>
+<td><img src="media/image125.png" style="width:0.25003in;height:0.21878in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>Rioolput</p>
+<p>(supertype)</p></td>
+<td>Put</td>
+<td><img src="media/image126.png" style="width:0.23332in;height:0.21759in" />B-SRI-PUT_KUNSTSTOF-SO.dwg</td>
+<td></td>
+<td><img src="media/image127.png" style="width:0.36937in;height:0.33333in" /></td>
+<td>-</td>
+<td><img src="media/image128.png" style="width:0.17708in;height:0.26042in" /></td>
+<td><img src="media/image129.png" style="width:0.22917in;height:0.22917in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Overnamepunt</td>
+<td>Overnamepunt</td>
+<td>Niet aanwezig</td>
+<td></td>
+<td></td>
+<td><img src="media/image130.png" style="width:0.875in;height:0.41667in" /></td>
+<td>-</td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Inspectieput</td>
+<td>Inspectieput (persleiding)</td>
+<td><img src="media/image131.png" style="width:0.23984in;height:0.24537in" />SRI-PUT_INSPECTIE-SO.dwg</td>
+<td><img src="media/image132.png" style="width:0.22917in;height:0.26042in" /> Knooppunt riolering</td>
+<td></td>
+<td><img src="media/image133.png" style="width:0.23958in;height:0.27083in" /></td>
+<td>-</td>
+<td><img src="media/image134.png" style="width:0.3438in;height:0.20836in" /></td>
+<td><img src="media/image135.png" style="width:0.24003in;height:0.26487in" /></td>
+</tr>
+<tr class="even">
+<td>Beerput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Doorspoelput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Drainageput</td>
+<td></td>
+<td></td>
+<td><p><img src="media/image136.png" style="width:0.35422in;height:0.27087in" /></p>
+<p>Knooppunt drainage</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image137.png" style="width:0.27087in;height:0.17711in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Erfafscheidingsput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Externe overstortput</td>
+<td>Externe Overstortput</td>
+<td><img src="media/image138.png" style="width:0.21572in;height:0.21296in" /> B-SRI-PUT_OVERSTORT-SO.dwg</td>
+<td></td>
+<td><img src="media/image139.png" style="width:0.39583in;height:0.38739in" /></td>
+<td><img src="media/image113.png" style="width:0.25in;height:0.20833in" /></td>
+<td><p><img src="media/image114.png" style="width:0.29167in;height:0.30208in" /> rood = met meting</p>
+<p><img src="media/image140.png" style="width:0.25in;height:0.27083in" /> zwart = zonder meting</p></td>
+<td><img src="media/image115.png" style="width:0.23958in;height:0.21875in" /></td>
+<td><img src="media/image141.png" style="width:0.34236in;height:0.25833in" /></td>
+</tr>
+<tr class="odd">
+<td>Filterput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Interne overstortput</td>
+<td>Interne Overstort</td>
+<td><img src="media/image142.png" style="width:0.21181in;height:0.2091in" />B-SRI-PUT_OVERSTORT-SO.dwg</td>
+<td></td>
+<td><img src="media/image143.png" style="width:0.40625in;height:0.37838in" /></td>
+<td><img src="media/image113.png" style="width:0.25in;height:0.20833in" />(zelfde)</td>
+<td><img src="media/image114.png" style="width:0.29167in;height:0.30208in" />(zelfde)</td>
+<td><img src="media/image144.png" style="width:0.27083in;height:0.27083in" /></td>
+<td><img src="media/image145.png" style="width:0.34236in;height:0.27361in" /></td>
+</tr>
+<tr class="odd">
+<td>Stuwput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image146.png" style="width:0.26045in;height:0.2292in" /></td>
+<td><img src="media/image147.png" style="width:0.34236in;height:0.30903in" /></td>
+</tr>
+<tr class="even">
+<td>Kolk</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image148.png" style="width:0.18533in;height:0.12973in" /> <img src="media/image149.png" style="width:0.21622in;height:0.14166in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Kruisingsput</td>
+<td></td>
+<td></td>
+<td><p><img src="media/image150.png" style="width:0.23962in;height:0.27087in" /></p>
+<p>Kruisput</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image151.png" style="width:0.28129in;height:0.23962in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Lozingsput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Noodoverstortput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ontstoppingsput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Pompunit</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image152.png" style="width:0.28129in;height:0.25003in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Reinigende put</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Slokop</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Vacuümopslagtank</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Verbeterde overstortput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Wervelput</td>
+<td></td>
+<td></td>
+<td><p><img src="media/image153.png" style="width:0.31254in;height:0.27087in" /></p>
+<p>Wervelventiel</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Zinkerput</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image154.png" style="width:0.27087in;height:0.20836in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Verdekte put</td>
+<td></td>
+<td></td>
+<td><img src="media/image155.png" style="width:0.19792in;height:0.17708in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image156.png" style="width:0.30213in;height:0.21878in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Berry</td>
+<td></td>
+<td><img src="media/image157.png" style="width:0.2292in;height:0.19794in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Buiten bedrijf</td>
+<td></td>
+<td><img src="media/image158.png" style="width:0.2292in;height:0.2292in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>? Perceelaansluitpunt</td>
+<td></td>
+<td></td>
+<td><p><img src="media/image159.png" style="width:0.38542in;height:0.33333in" /></p>
+<p>Inprikpunt</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Uitlaatpunt</td>
+<td></td>
+<td></td>
+<td><p><img src="media/image160.png" style="width:0.26045in;height:0.23962in" /></p>
+<p>Uitstroompunt</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Nog te verwerken</td>
+<td></td>
+<td><img src="media/image161.png" style="width:0.2292in;height:0.27087in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Particulier</td>
+<td></td>
+<td><img src="media/image162.png" style="width:0.33338in;height:0.28129in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 *Tabel: Soorten onderdeel*
 
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Soorten   | Veel      | N   | R   | An  | H   | Liz | Den | Sw  |
-| onderdeel | gebruikte | LCS | ott | tea | HNK | ard | H   | eco |
-| GWSW      | ob        |     | er- | Gr  |     |     | aag |     |
-|           | jectnamen |     | dam | oup |     | (   |     |     |
-|           | in GIS    |     |     |     |     | geb |     |     |
-|           |           |     |     |     |     | ase |     |     |
-|           |           |     |     |     |     | erd |     |     |
-|           |           |     |     |     |     | op  |     |     |
-|           |           |     |     |     |     | A   |     |     |
-|           |           |     |     |     |     | quo |     |     |
-|           |           |     |     |     |     | s   |     |     |
-|           |           |     |     |     |     | tan |     |     |
-|           |           |     |     |     |     | daa |     |     |
-|           |           |     |     |     |     | rd) |     |     |
-+===========+===========+=====+=====+=====+=====+=====+=====+=====+
-| Afsluiter | Afsluiter | !   | ![  | ![  | ![  | \-  | !   | !   |
-|           |           | []( | ](m | ](m | ](m |     | []( | []( |
-|           |           | med | edi | edi | edi |     | med | med |
-|           |           | ia/ | a/i | a/i | a/i |     | ia/ | ia/ |
-|           |           | ima | mag | mag | mag |     | ima | ima |
-|           |           | ge1 | e16 | e16 | e16 |     | ge1 | ge1 |
-|           |           | 65. | 6.p | 7.p | 8.p |     | 69. | 70. |
-|           |           | png | ng) | ng) | ng) |     | png | png |
-|           |           | ){w | {wi | {wi | {wi |     | ){w | ){w |
-|           |           | idt | dth | dth | dth |     | idt | idt |
-|           |           | h=" | ="0 | ="0 | ="0 |     | h=" | h=" |
-|           |           | 0.2 | .27 | .39 | .25 |     | 0.3 | 0.3 |
-|           |           | 776 | 087 | 639 | in" |     | 333 | 423 |
-|           |           | 596 | 160 | 654 | h   |     | 333 | 611 |
-|           |           | 675 | 979 | 418 | eig |     | 333 | 111 |
-|           |           | 415 | 877 | 197 | ht= |     | 333 | 111 |
-|           |           | 573 | 517 | 723 | "0. |     | 333 | 111 |
-|           |           | in" | in" | in" | 229 |     | in" | in" |
-|           |           | he  | hei | hei | 166 |     | h   | h   |
-|           |           | igh | ght | ght | 666 |     | eig | eig |
-|           |           | t=" | ="0 | ="0 | 666 |     | ht= | ht= |
-|           |           | 0.1 | .18 | .36 | 666 |     | "0. | "0. |
-|           |           | 944 | 752 | 036 | 66i |     | 239 | 217 |
-|           |           | 444 | 624 | 089 | n"} |     | 583 | 361 |
-|           |           | 444 | 671 | 238 |     |     | 333 | 111 |
-|           |           | 444 | 916 | 845 |     |     | 333 | 111 |
-|           |           | 444 | 01i | 14i |     |     | 333 | 111 |
-|           |           | 5in | n"} | n"} |     |     | 34i | 12i |
-|           |           | "}S |     |     |     |     | n"} | n"} |
-|           |           | RI- |     |     |     |     |     |     |
-|           |           | HUL |     |     |     |     |     |     |
-|           |           | P_A |     |     |     |     |     |     |
-|           |           | FSL |     |     |     |     |     |     |
-|           |           | UIT |     |     |     |     |     |     |
-|           |           | ER- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| O         | Ontluc    | ![  |     | ![  | ![  | \-  | ![  |     |
-| ntluchtin | htingsput | ](m |     | ](m | ](m |     | ](m |     |
-| gsventiel |           | edi |     | edi | edi |     | edi |     |
-|           |           | a/i |     | a/i | a/i |     | a/i |     |
-|           |           | mag |     | mag | mag |     | mag |     |
-|           |           | e17 |     | e17 | e17 |     | e17 |     |
-|           |           | 1.p |     | 2.p | 3.p |     | 4.p |     |
-|           |           | ng) |     | ng) | ng) |     | ng) |     |
-|           |           | {wi |     | {wi | {wi |     | {wi |     |
-|           |           | dth |     | dth | dth |     | dth |     |
-|           |           | ="0 |     | ="0 | ="0 |     | ="0 |     |
-|           |           | .17 |     | .39 | .25 |     | .21 |     |
-|           |           | 592 |     | 639 | in" |     | 875 |     |
-|           |           | 629 |     | 654 | hei |     | in" |     |
-|           |           | 046 |     | 418 | ght |     | h   |     |
-|           |           | 369 |     | 197 | ="0 |     | eig |     |
-|           |           | 204 |     | 723 | .29 |     | ht= |     |
-|           |           | in" |     | in" | 166 |     | "0. |     |
-|           |           | hei |     | hei | 666 |     | 239 |     |
-|           |           | ght |     | ght | 666 |     | 583 |     |
-|           |           | ="0 |     | ="0 | 666 |     | 333 |     |
-|           |           | .28 |     | .35 | 67i |     | 333 |     |
-|           |           | 346 |     | 135 | n"} |     | 333 |     |
-|           |           | 019 |     | 170 |     |     | 34i |     |
-|           |           | 247 |     | 603 |     |     | n"} |     |
-|           |           | 594 |     | 674 |     |     |     |     |
-|           |           | 05i |     | 54i |     |     |     |     |
-|           |           | n"} |     | n"} |     |     |     |     |
-|           |           | SRI |     |     |     |     |     |     |
-|           |           | -HU |     |     |     |     |     |     |
-|           |           | LP_ |     |     |     |     |     |     |
-|           |           | ONT |     |     |     |     |     |     |
-|           |           | LUC |     |     |     |     |     |     |
-|           |           | HTI |     |     |     |     |     |     |
-|           |           | NG- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-|           |           | Po  |     |     |     |     |     |     |
-|           |           | lyl |     |     |     |     |     |     |
-|           |           | ine |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Mangat    | Mangat    | N   |     |     | ![  | \-  |     |     |
-|           | (per      | iet |     |     | ](m |     |     |     |
-|           | sleiding) | aa  |     |     | edi |     |     |     |
-|           |           | nwe |     |     | a/i |     |     |     |
-|           |           | zig |     |     | mag |     |     |     |
-|           |           |     |     |     | e17 |     |     |     |
-|           |           |     |     |     | 5.p |     |     |     |
-|           |           |     |     |     | ng) |     |     |     |
-|           |           |     |     |     | {wi |     |     |     |
-|           |           |     |     |     | dth |     |     |     |
-|           |           |     |     |     | ="0 |     |     |     |
-|           |           |     |     |     | .25 |     |     |     |
-|           |           |     |     |     | in" |     |     |     |
-|           |           |     |     |     | h   |     |     |     |
-|           |           |     |     |     | eig |     |     |     |
-|           |           |     |     |     | ht= |     |     |     |
-|           |           |     |     |     | "0. |     |     |     |
-|           |           |     |     |     | 208 |     |     |     |
-|           |           |     |     |     | 333 |     |     |     |
-|           |           |     |     |     | 333 |     |     |     |
-|           |           |     |     |     | 333 |     |     |     |
-|           |           |     |     |     | 333 |     |     |     |
-|           |           |     |     |     | 34i |     |     |     |
-|           |           |     |     |     | n"} |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Verbin    | K         | N   |     |     | ![  | \-  | ![  |     |
-| dingsstuk | oppelstuk | iet |     |     | ](m |     | ](m |     |
-|           |           | aa  |     |     | edi |     | edi |     |
-|           |           | nwe |     |     | a/i |     | a/i |     |
-|           |           | zig |     |     | mag |     | mag |     |
-|           |           |     |     |     | e17 |     | e17 |     |
-|           |           |     |     |     | 6.p |     | 7.p |     |
-|           |           |     |     |     | ng) |     | ng) |     |
-|           |           |     |     |     | {wi |     | {wi |     |
-|           |           |     |     |     | dth |     | dth |     |
-|           |           |     |     |     | ="0 |     | ="0 |     |
-|           |           |     |     |     | .22 |     | .27 |     |
-|           |           |     |     |     | 916 |     | 087 |     |
-|           |           |     |     |     | 666 |     | 160 |     |
-|           |           |     |     |     | 666 |     | 979 |     |
-|           |           |     |     |     | 666 |     | 877 |     |
-|           |           |     |     |     | 666 |     | 517 |     |
-|           |           |     |     |     | in" |     | in" |     |
-|           |           |     |     |     | h   |     | h   |     |
-|           |           |     |     |     | eig |     | eig |     |
-|           |           |     |     |     | ht= |     | ht= |     |
-|           |           |     |     |     | "0. |     | "0. |     |
-|           |           |     |     |     | 25i |     | 145 |     |
-|           |           |     |     |     | n"} |     | 854 |     |
-|           |           |     |     |     |     |     | 111 |     |
-|           |           |     |     |     |     |     | 986 |     |
-|           |           |     |     |     |     |     | 001 |     |
-|           |           |     |     |     |     |     | 76i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| R         | Neer      |     |     |     |     | !   |     |     |
-| egenmeter | slagmeter |     |     |     |     | []( |     |     |
-|           |           |     |     |     |     | med |     |     |
-|           |           |     |     |     |     | ia/ |     |     |
-|           |           |     |     |     |     | ima |     |     |
-|           |           |     |     |     |     | ge1 |     |     |
-|           |           |     |     |     |     | 78. |     |     |
-|           |           |     |     |     |     | png |     |     |
-|           |           |     |     |     |     | ){w |     |     |
-|           |           |     |     |     |     | idt |     |     |
-|           |           |     |     |     |     | h=" |     |     |
-|           |           |     |     |     |     | 0.2 |     |     |
-|           |           |     |     |     |     | 604 |     |     |
-|           |           |     |     |     |     | 166 |     |     |
-|           |           |     |     |     |     | 666 |     |     |
-|           |           |     |     |     |     | 666 |     |     |
-|           |           |     |     |     |     | 667 |     |     |
-|           |           |     |     |     |     | in" |     |     |
-|           |           |     |     |     |     | hei |     |     |
-|           |           |     |     |     |     | ght |     |     |
-|           |           |     |     |     |     | ="0 |     |     |
-|           |           |     |     |     |     | .27 |     |     |
-|           |           |     |     |     |     | 083 |     |     |
-|           |           |     |     |     |     | 333 |     |     |
-|           |           |     |     |     |     | 333 |     |     |
-|           |           |     |     |     |     | 333 |     |     |
-|           |           |     |     |     |     | 33i |     |     |
-|           |           |     |     |     |     | n"} |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Waterni   | Ni        |     |     |     |     |     |     |     |
-| veaumeter | veaumeter |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| De        | De        |     |     |     |     |     |     |     |
-| bietmeter | bietmeter |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Ontstop   | Ontstop   |     |     |     |     |     | !   |     |
-| pingsstuk | pingsstuk |     |     |     |     |     | []( |     |
-|           |           |     |     |     |     |     | med |     |
-|           |           |     |     |     |     |     | ia/ |     |
-|           |           |     |     |     |     |     | ima |     |
-|           |           |     |     |     |     |     | ge1 |     |
-|           |           |     |     |     |     |     | 79. |     |
-|           |           |     |     |     |     |     | png |     |
-|           |           |     |     |     |     |     | ){w |     |
-|           |           |     |     |     |     |     | idt |     |
-|           |           |     |     |     |     |     | h=" |     |
-|           |           |     |     |     |     |     | 0.2 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | hei |     |
-|           |           |     |     |     |     |     | ght |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .19 |     |
-|           |           |     |     |     |     |     | 259 |     |
-|           |           |     |     |     |     |     | 295 |     |
-|           |           |     |     |     |     |     | 713 |     |
-|           |           |     |     |     |     |     | 035 |     |
-|           |           |     |     |     |     |     | 87i |     |
-|           |           |     |     |     |     |     | n"} |     |
-|           |           |     |     |     |     |     | ![  |     |
-|           |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e18 |     |
-|           |           |     |     |     |     |     | 0.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .21 |     |
-|           |           |     |     |     |     |     | 081 |     |
-|           |           |     |     |     |     |     | 036 |     |
-|           |           |     |     |     |     |     | 745 |     |
-|           |           |     |     |     |     |     | 406 |     |
-|           |           |     |     |     |     |     | 825 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | h   |     |
-|           |           |     |     |     |     |     | eig |     |
-|           |           |     |     |     |     |     | ht= |     |
-|           |           |     |     |     |     |     | "0. |     |
-|           |           |     |     |     |     |     | 163 |     |
-|           |           |     |     |     |     |     | 963 |     |
-|           |           |     |     |     |     |     | 254 |     |
-|           |           |     |     |     |     |     | 593 |     |
-|           |           |     |     |     |     |     | 175 |     |
-|           |           |     |     |     |     |     | 84i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-|           |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Soorten onderdeel GWSW</th>
+<th>Veel gebruikte objectnamen in GIS</th>
+<th>NLCS</th>
+<th>Rotter-dam</th>
+<th>Antea Group</th>
+<th>HHNK</th>
+<th><p>Lizard</p>
+<p>(gebaseerd op Aquo standaard)</p></th>
+<th>Den Haag</th>
+<th>Sweco</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Afsluiter</td>
+<td>Afsluiter</td>
+<td><img src="media/image163.png" style="width:0.27766in;height:0.19444in" />SRI-HULP_AFSLUITER-SO.dwg</td>
+<td><img src="media/image164.png" style="width:0.27087in;height:0.18753in" /></td>
+<td><img src="media/image165.png" style="width:0.3964in;height:0.36036in" /></td>
+<td><img src="media/image166.png" style="width:0.25in;height:0.22917in" /></td>
+<td>-</td>
+<td><img src="media/image167.png" style="width:0.33333in;height:0.23958in" /></td>
+<td><img src="media/image168.png" style="width:0.34236in;height:0.21736in" /></td>
+</tr>
+<tr class="even">
+<td>Ontluchtingsventiel</td>
+<td>Ontluchtingsput</td>
+<td><img src="media/image169.png" style="width:0.17593in;height:0.28346in" />SRI-HULP_ONTLUCHTING-SO.dwg Polyline</td>
+<td></td>
+<td><img src="media/image170.png" style="width:0.3964in;height:0.35135in" /></td>
+<td><img src="media/image171.png" style="width:0.25in;height:0.29167in" /></td>
+<td>-</td>
+<td><img src="media/image172.png" style="width:0.21875in;height:0.23958in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Mangat</td>
+<td>Mangat (persleiding)</td>
+<td>Niet aanwezig</td>
+<td></td>
+<td></td>
+<td><img src="media/image173.png" style="width:0.25in;height:0.20833in" /></td>
+<td>-</td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Verbindingsstuk</td>
+<td>Koppelstuk</td>
+<td>Niet aanwezig</td>
+<td></td>
+<td></td>
+<td><img src="media/image174.png" style="width:0.22917in;height:0.25in" /></td>
+<td>-</td>
+<td><img src="media/image175.png" style="width:0.27087in;height:0.14585in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Regenmeter</td>
+<td>Neerslagmeter</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image176.png" style="width:0.26042in;height:0.27083in" /></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Waterniveaumeter</td>
+<td>Niveaumeter</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Debietmeter</td>
+<td>Debietmeter</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Ontstoppingsstuk</td>
+<td>Ontstoppingsstuk</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image177.png" style="width:0.2in;height:0.19259in" /> <img src="media/image178.png" style="width:0.21081in;height:0.16396in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 *Tabel: Soorten bouwwerk*
 
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Soorten   | Veel      | N   | R   | An  | H   | Liz | Den | Sw  |
-| bouwwerk  | gebruikte | LCS | ott | tea | HNK | ard | H   | eco |
-| GWSW      | ob        |     | er- | Gr  |     |     | aag |     |
-|           | jectnamen |     | dam | oup |     | (   |     |     |
-|           | in GIS    |     |     |     |     | geb |     |     |
-|           |           |     |     |     |     | ase |     |     |
-|           |           |     |     |     |     | erd |     |     |
-|           |           |     |     |     |     | op  |     |     |
-|           |           |     |     |     |     | A   |     |     |
-|           |           |     |     |     |     | quo |     |     |
-|           |           |     |     |     |     | s   |     |     |
-|           |           |     |     |     |     | tan |     |     |
-|           |           |     |     |     |     | daa |     |     |
-|           |           |     |     |     |     | rd) |     |     |
-+===========+===========+=====+=====+=====+=====+=====+=====+=====+
-| Bergbez   |           |     |     | ![  |     |     | ![  |     |
-| inkbassin |           |     |     | ](m |     |     | ](m |     |
-|           |           |     |     | edi |     |     | edi |     |
-|           |           |     |     | a/i |     |     | a/i |     |
-|           |           |     |     | mag |     |     | mag |     |
-|           |           |     |     | e18 |     |     | e18 |     |
-|           |           |     |     | 1.p |     |     | 2.p |     |
-|           |           |     |     | ng) |     |     | ng) |     |
-|           |           |     |     | {wi |     |     | {wi |     |
-|           |           |     |     | dth |     |     | dth |     |
-|           |           |     |     | ="0 |     |     | ="0 |     |
-|           |           |     |     | .39 |     |     | .40 |     |
-|           |           |     |     | 305 |     |     | 630 |     |
-|           |           |     |     | 555 |     |     | 686 |     |
-|           |           |     |     | 555 |     |     | 789 |     |
-|           |           |     |     | 555 |     |     | 151 |     |
-|           |           |     |     | 555 |     |     | 355 |     |
-|           |           |     |     | in" |     |     | in" |     |
-|           |           |     |     | hei |     |     | hei |     |
-|           |           |     |     | ght |     |     | ght |     |
-|           |           |     |     | ="0 |     |     | ="0 |     |
-|           |           |     |     | .35 |     |     | .25 |     |
-|           |           |     |     | 972 |     |     | 003 |     |
-|           |           |     |     | 222 |     |     | 499 |     |
-|           |           |     |     | 222 |     |     | 562 |     |
-|           |           |     |     | 222 |     |     | 554 |     |
-|           |           |     |     | 22i |     |     | 68i |     |
-|           |           |     |     | n"} |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Bergi     |           |     |     |     |     |     | ![  |     |
-| ngsbassin |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e18 |     |
-|           |           |     |     |     |     |     | 2.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .40 |     |
-|           |           |     |     |     |     |     | 630 |     |
-|           |           |     |     |     |     |     | 686 |     |
-|           |           |     |     |     |     |     | 789 |     |
-|           |           |     |     |     |     |     | 151 |     |
-|           |           |     |     |     |     |     | 355 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | hei |     |
-|           |           |     |     |     |     |     | ght |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .25 |     |
-|           |           |     |     |     |     |     | 003 |     |
-|           |           |     |     |     |     |     | 499 |     |
-|           |           |     |     |     |     |     | 562 |     |
-|           |           |     |     |     |     |     | 554 |     |
-|           |           |     |     |     |     |     | 68i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Bergi     |           |     |     |     |     |     |     |     |
-| ngsvijver |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Bez       |           |     |     |     |     |     | ![  |     |
-| inkbassin |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e18 |     |
-|           |           |     |     |     |     |     | 2.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .40 |     |
-|           |           |     |     |     |     |     | 630 |     |
-|           |           |     |     |     |     |     | 686 |     |
-|           |           |     |     |     |     |     | 789 |     |
-|           |           |     |     |     |     |     | 151 |     |
-|           |           |     |     |     |     |     | 355 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | hei |     |
-|           |           |     |     |     |     |     | ght |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .25 |     |
-|           |           |     |     |     |     |     | 003 |     |
-|           |           |     |     |     |     |     | 499 |     |
-|           |           |     |     |     |     |     | 562 |     |
-|           |           |     |     |     |     |     | 554 |     |
-|           |           |     |     |     |     |     | 68i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| IBA       |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| In        |           |     |     |     |     |     |     |     |
-| filtratie |           |     |     |     |     |     |     |     |
-| reservoir |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| No        |           |     |     |     |     |     |     |     |
-| oduitlaat |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Open      |           |     |     |     |     |     |     |     |
-| berging   |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Uitlaatco | Hemelwat  | ![  |     | !   | ![  | ![  | ![  | !   |
-| nstructie | eruitlaat | ](m |     | []( | ](m | ](m | ](m | []( |
-|           |           | edi |     | med | edi | edi | edi | med |
-| Uitlaat   |           | a/i |     | ia/ | a/i | a/i | a/i | ia/ |
-| (punt)    |           | mag |     | ima | mag | mag | mag | ima |
-|           |           | e18 |     | ge1 | e18 | e18 | e18 | ge1 |
-|           |           | 3.p |     | 84. | 5.p | 6.p | 7.p | 89. |
-|           |           | ng) |     | png | ng) | ng) | ng) | png |
-|           |           | {wi |     | ){w | {wi | {wi | {wi | ){w |
-|           |           | dth |     | idt | dth | dth | dth | idt |
-|           |           | ="0 |     | h=" | ="0 | ="0 | ="0 | h=" |
-|           |           | .19 |     | 0.3 | .20 | .22 | .23 | 0.3 |
-|           |           | 444 |     | 958 | 833 | 916 | 958 | 423 |
-|           |           | 444 |     | 333 | 333 | 666 | 333 | 611 |
-|           |           | 444 |     | 333 | 333 | 666 | 333 | 111 |
-|           |           | 444 |     | 333 | 333 | 666 | 333 | 111 |
-|           |           | 445 |     | 333 | 334 | 666 | 334 | 111 |
-|           |           | in" |     | in" | in" | in" | in" | in" |
-|           |           | he  |     | hei | h   | h   | hei | hei |
-|           |           | igh |     | ght | eig | eig | ght | ght |
-|           |           | t=" |     | ="0 | ht= | ht= | ="0 | ="0 |
-|           |           | 0.1 |     | .35 | "0. | "0. | .25 | .21 |
-|           |           | 883 |     | 135 | 216 | 229 | in" | 111 |
-|           |           | 869 |     | 170 | 216 | 166 | }![ | 111 |
-|           |           | 203 |     | 603 | 097 | 666 | ](m | 111 |
-|           |           | 849 |     | 674 | 987 | 666 | edi | 111 |
-|           |           | 519 |     | 54i | 751 | 666 | a/i | 11i |
-|           |           | in" |     | n"} | 54i | 66i | mag | n"} |
-|           |           | }B- |     |     | n"} | n"} | e18 |     |
-|           |           | SRI |     |     |     |     | 8.p |     |
-|           |           | -PU |     |     |     |     | ng) |     |
-|           |           | T_H |     |     |     |     | {wi |     |
-|           |           | WA- |     |     |     |     | dth |     |
-|           |           | SO. |     |     |     |     | ="0 |     |
-|           |           | dwg |     |     |     |     | .27 |     |
-|           |           |     |     |     |     |     | 087 |     |
-|           |           |     |     |     |     |     | 160 |     |
-|           |           |     |     |     |     |     | 979 |     |
-|           |           |     |     |     |     |     | 877 |     |
-|           |           |     |     |     |     |     | 517 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | hei |     |
-|           |           |     |     |     |     |     | ght |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .25 |     |
-|           |           |     |     |     |     |     | 003 |     |
-|           |           |     |     |     |     |     | 499 |     |
-|           |           |     |     |     |     |     | 562 |     |
-|           |           |     |     |     |     |     | 554 |     |
-|           |           |     |     |     |     |     | 68i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Open      |           |     |     |     |     |     |     |     |
-| berging   |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Ri        | Ri        | ![  | !   | !   | ![  | !   | ![  | !   |
-| oolgemaal | oolgemaal | ](m | []( | []( | ](m | []( | ](m | []( |
-|           | (Wa       | edi | med | med | edi | med | edi | med |
-|           | terschap) | a/i | ia/ | ia/ | a/i | ia/ | a/i | ia/ |
-|           |           | mag | ima | ima | mag | ima | mag | ima |
-|           |           | e19 | ge1 | ge1 | e19 | ge1 | e19 | ge1 |
-|           |           | 0.p | 91. | 92. | 3.p | 94. | 5.p | 96. |
-|           |           | ng) | png | png | ng) | png | ng) | png |
-|           |           | {wi | ){w | ){w | {wi | ){w | {wi | ){w |
-|           |           | dth | idt | idt | dth | idt | dth | idt |
-|           |           | ="0 | h=" | h=" | ="0 | h=" | ="0 | h=" |
-|           |           | .21 | 0.3 | 0.3 | .20 | 0.2 | .23 | 0.3 |
-|           |           | 219 | 021 | 958 | 833 | 604 | 958 | 423 |
-|           |           | 706 | 259 | 333 | 333 | 166 | 333 | 611 |
-|           |           | 911 | 842 | 333 | 333 | 666 | 333 | 111 |
-|           |           | 636 | 519 | 333 | 333 | 666 | 333 | 111 |
-|           |           | 046 | 685 | 333 | 334 | 667 | 334 | 111 |
-|           |           | in" | in" | in" | in" | in" | in" | in" |
-|           |           | he  | h   | hei | h   | h   | h   | h   |
-|           |           | igh | eig | ght | eig | eig | eig | eig |
-|           |           | t=" | ht= | ="0 | ht= | ht= | ht= | ht= |
-|           |           | 0.1 | "0. | .35 | "0. | "0. | "0. | "0. |
-|           |           | 979 | 229 | 135 | 197 | 25i | 281 | 308 |
-|           |           | 166 | 198 | 170 | 916 | n"} | 25i | 333 |
-|           |           | 666 | 381 | 603 | 666 |     | n"} | 333 |
-|           |           | 666 | 452 | 674 | 666 |     |     | 333 |
-|           |           | 666 | 318 | 54i | 666 |     |     | 333 |
-|           |           | 6in | 47i | n"} | 66i |     |     | 35i |
-|           |           | "}V | n"} |     | n"} |     |     | n"} |
-|           |           | -SR |     |     |     |     |     |     |
-|           |           | I-G |     |     |     |     |     |     |
-|           |           | EMA |     |     |     |     |     |     |
-|           |           | AL- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Ri        | Ri        | !   | !   |     | ![  | !   | !   | !   |
-| oolgemaal | oolgemaal | []( | []( |     | ](m | []( | []( | []( |
-|           | (         | med | med |     | edi | med | med | med |
-|           | gemeente) | ia/ | ia/ |     | a/i | ia/ | ia/ | ia/ |
-|           |           | ima | ima |     | mag | ima | ima | ima |
-|           |           | ge1 | ge1 |     | e12 | ge1 | ge1 | ge1 |
-|           |           | 97. | 91. |     | 0.p | 21. | 22. | 96. |
-|           |           | png | png |     | ng) | png | png | png |
-|           |           | ){w | ){w |     | {wi | ){w | ){w | ){w |
-|           |           | idt | idt |     | dth | idt | idt | idt |
-|           |           | h=" | h=" |     | ="0 | h=" | h=" | h=" |
-|           |           | 0.2 | 0.3 |     | .20 | 0.2 | 0.2 | 0.3 |
-|           |           | 037 | 021 |     | 833 | 604 | 708 | 423 |
-|           |           | 040 | 259 |     | 333 | 166 | 333 | 611 |
-|           |           | 682 | 842 |     | 333 | 666 | 333 | 111 |
-|           |           | 414 | 519 |     | 333 | 666 | 333 | 111 |
-|           |           | 698 | 685 |     | 334 | 667 | 333 | 111 |
-|           |           | in" | in" |     | in" | in" | in" | in" |
-|           |           | he  | h   |     | h   | h   | h   | h   |
-|           |           | igh | eig |     | eig | eig | eig | eig |
-|           |           | t=" | ht= |     | ht= | ht= | ht= | ht= |
-|           |           | 0.1 | "0. |     | "0. | "0. | "0. | "0. |
-|           |           | 899 | 229 |     | 229 | 283 | 229 | 308 |
-|           |           | 956 | 198 |     | 166 | 019 | 166 | 333 |
-|           |           | 255 | 381 |     | 666 | 466 | 666 | 333 |
-|           |           | 468 | 452 |     | 666 | 316 | 666 | 333 |
-|           |           | 066 | 318 |     | 666 | 710 | 666 | 333 |
-|           |           | 6in | 47i |     | 66i | 43i | 66i | 35i |
-|           |           | "}V | n"} |     | n"} | n"} | n"} | n"} |
-|           |           | -SR |     |     |     |     |     |     |
-|           |           | I-G |     |     |     |     |     |     |
-|           |           | EMA |     |     |     |     |     |     |
-|           |           | AL- |     |     |     |     |     |     |
-|           |           | SO. |     |     |     |     |     |     |
-|           |           | dwg |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| RWZI      | Zuivering | N   |     |     | ![  | ![  | \-  |     |
-|           |           | iet |     |     | ](m | ](m |     |     |
-|           |           | aa  |     |     | edi | edi |     |     |
-|           |           | nwe |     |     | a/i | a/i |     |     |
-|           |           | zig |     |     | mag | mag |     |     |
-|           |           |     |     |     | e19 | e19 |     |     |
-|           |           |     |     |     | 8.p | 9.p |     |     |
-|           |           |     |     |     | ng) | ng) |     |     |
-|           |           |     |     |     | {wi | {wi |     |     |
-|           |           |     |     |     | dth | dth |     |     |
-|           |           |     |     |     | ="0 | ="0 |     |     |
-|           |           |     |     |     | .25 | .20 |     |     |
-|           |           |     |     |     | in" | 833 |     |     |
-|           |           |     |     |     | h   | 333 |     |     |
-|           |           |     |     |     | eig | 333 |     |     |
-|           |           |     |     |     | ht= | 333 |     |     |
-|           |           |     |     |     | "0. | 334 |     |     |
-|           |           |     |     |     | 239 | in" |     |     |
-|           |           |     |     |     | 583 | h   |     |     |
-|           |           |     |     |     | 333 | eig |     |     |
-|           |           |     |     |     | 333 | ht= |     |     |
-|           |           |     |     |     | 333 | "0. |     |     |
-|           |           |     |     |     | 34i | 196 |     |     |
-|           |           |     |     |     | n"} | 428 |     |     |
-|           |           |     |     |     |     | 258 |     |     |
-|           |           |     |     |     |     | 967 |     |     |
-|           |           |     |     |     |     | 629 |     |     |
-|           |           |     |     |     |     | 05i |     |     |
-|           |           |     |     |     |     | n"} |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-|           |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-|           |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Soorten bouwwerk GWSW</th>
+<th>Veel gebruikte objectnamen in GIS</th>
+<th>NLCS</th>
+<th>Rotter-dam</th>
+<th>Antea Group</th>
+<th>HHNK</th>
+<th><p>Lizard</p>
+<p>(gebaseerd op Aquo standaard)</p></th>
+<th>Den Haag</th>
+<th>Sweco</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bergbezinkbassin</td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image179.png" style="width:0.39306in;height:0.35972in" /></td>
+<td></td>
+<td></td>
+<td><img src="media/image180.png" style="width:0.40631in;height:0.25003in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Bergingsbassin</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image180.png" style="width:0.40631in;height:0.25003in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Bergingsvijver</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Bezinkbassin</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image180.png" style="width:0.40631in;height:0.25003in" /></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>IBA</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Infiltratiereservoir</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Nooduitlaat</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Open berging</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td><p>Uitlaatconstructie</p>
+<p>Uitlaat (punt)</p></td>
+<td>Hemelwateruitlaat</td>
+<td><img src="media/image181.png" style="width:0.19444in;height:0.18839in" />B-SRI-PUT_HWA-SO.dwg</td>
+<td></td>
+<td><img src="media/image182.png" style="width:0.39583in;height:0.35135in" /></td>
+<td><img src="media/image183.png" style="width:0.20833in;height:0.21622in" /></td>
+<td><img src="media/image184.png" style="width:0.22917in;height:0.22917in" /></td>
+<td><img src="media/image185.png" style="width:0.23958in;height:0.25in" /><img src="media/image186.png" style="width:0.27087in;height:0.25003in" /></td>
+<td><img src="media/image187.png" style="width:0.34236in;height:0.21111in" /></td>
+</tr>
+<tr class="even">
+<td>Open berging</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Rioolgemaal</td>
+<td>Rioolgemaal (Waterschap)</td>
+<td><img src="media/image188.png" style="width:0.2122in;height:0.19792in" />V-SRI-GEMAAL-SO.dwg</td>
+<td><img src="media/image189.png" style="width:0.30213in;height:0.2292in" /></td>
+<td><img src="media/image190.png" style="width:0.39583in;height:0.35135in" /></td>
+<td><img src="media/image191.png" style="width:0.20833in;height:0.19792in" /></td>
+<td><img src="media/image192.png" style="width:0.26042in;height:0.25in" /></td>
+<td><img src="media/image193.png" style="width:0.23958in;height:0.28125in" /></td>
+<td><img src="media/image194.png" style="width:0.34236in;height:0.30833in" /></td>
+</tr>
+<tr class="even">
+<td>Rioolgemaal</td>
+<td>Rioolgemaal (gemeente)</td>
+<td><img src="media/image195.png" style="width:0.2037in;height:0.19in" />V-SRI-GEMAAL-SO.dwg</td>
+<td><img src="media/image189.png" style="width:0.30213in;height:0.2292in" /></td>
+<td></td>
+<td><img src="media/image118.png" style="width:0.20833in;height:0.22917in" /></td>
+<td><img src="media/image119.png" style="width:0.26042in;height:0.28302in" /></td>
+<td><img src="media/image120.png" style="width:0.27083in;height:0.22917in" /></td>
+<td><img src="media/image194.png" style="width:0.34236in;height:0.30833in" /></td>
+</tr>
+<tr class="odd">
+<td>RWZI</td>
+<td>Zuivering</td>
+<td>Niet aanwezig</td>
+<td></td>
+<td></td>
+<td><img src="media/image196.png" style="width:0.25in;height:0.23958in" /></td>
+<td><img src="media/image197.png" style="width:0.20833in;height:0.19643in" /></td>
+<td>-</td>
+<td></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
 
 *Tabel: Soorten leiding*
 
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Soorten   | Veel      | N   | R   | An  | H   | Liz | Den | Sw  |
-| bouwwerk  | gebruikte | LCS | ott | tea | HNK | ard | H   | eco |
-| GWSW      | ob        |     | er- | Gr  |     |     | aag |     |
-|           | jectnamen |     | dam | oup |     | (   |     |     |
-|           | in GIS    |     |     |     |     | geb |     |     |
-|           |           |     |     |     |     | ase |     |     |
-|           |           |     |     |     |     | erd |     |     |
-|           |           |     |     |     |     | op  |     |     |
-|           |           |     |     |     |     | A   |     |     |
-|           |           |     |     |     |     | quo |     |     |
-|           |           |     |     |     |     | s   |     |     |
-|           |           |     |     |     |     | tan |     |     |
-|           |           |     |     |     |     | daa |     |     |
-|           |           |     |     |     |     | rd) |     |     |
-+===========+===========+=====+=====+=====+=====+=====+=====+=====+
-| Bergbezi  |           |     |     |     |     |     |     |     |
-| nkleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Bergin    |           |     |     |     |     |     |     |     |
-| gsleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Drain     |           |     | ![  |     |     |     | ![  |     |
-|           |           |     | ](m |     |     |     | ](m |     |
-|           |           |     | edi |     |     |     | edi |     |
-|           |           |     | a/i |     |     |     | a/i |     |
-|           |           |     | mag |     |     |     | mag |     |
-|           |           |     | e20 |     |     |     | e20 |     |
-|           |           |     | 0.p |     |     |     | 1.p |     |
-|           |           |     | ng) |     |     |     | ng) |     |
-|           |           |     | {wi |     |     |     | {wi |     |
-|           |           |     | dth |     |     |     | dth |     |
-|           |           |     | ="0 |     |     |     | ="0 |     |
-|           |           |     | .44 |     |     |     | .44 |     |
-|           |           |     | 375 |     |     |     | 375 |     |
-|           |           |     | in" |     |     |     | in" |     |
-|           |           |     | he  |     |     |     | he  |     |
-|           |           |     | igh |     |     |     | igh |     |
-|           |           |     | t=" |     |     |     | t=" |     |
-|           |           |     | 5.6 |     |     |     | 9.2 |     |
-|           |           |     | 25e |     |     |     | 361 |     |
-|           |           |     | -2i |     |     |     | 111 |     |
-|           |           |     | n"} |     |     |     | 111 |     |
-|           |           |     |     |     |     |     | 111 |     |
-|           |           |     |     |     |     |     | 12e |     |
-|           |           |     |     |     |     |     | -2i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Dr        |           |     |     |     |     |     |     | ![  |
-| ukleiding |           |     |     |     |     |     |     | ](m |
-|           |           |     |     |     |     |     |     | edi |
-|           |           |     |     |     |     |     |     | a/i |
-|           |           |     |     |     |     |     |     | mag |
-|           |           |     |     |     |     |     |     | e20 |
-|           |           |     |     |     |     |     |     | 2.p |
-|           |           |     |     |     |     |     |     | ng) |
-|           |           |     |     |     |     |     |     | {wi |
-|           |           |     |     |     |     |     |     | dth |
-|           |           |     |     |     |     |     |     | ="0 |
-|           |           |     |     |     |     |     |     | .44 |
-|           |           |     |     |     |     |     |     | 375 |
-|           |           |     |     |     |     |     |     | in" |
-|           |           |     |     |     |     |     |     | he  |
-|           |           |     |     |     |     |     |     | igh |
-|           |           |     |     |     |     |     |     | t=" |
-|           |           |     |     |     |     |     |     | 6.3 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 88e |
-|           |           |     |     |     |     |     |     | -2i |
-|           |           |     |     |     |     |     |     | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Duiker    |           |     |     |     |     |     | ![  |     |
-|           |           |     |     |     |     |     | ](m |     |
-|           |           |     |     |     |     |     | edi |     |
-|           |           |     |     |     |     |     | a/i |     |
-|           |           |     |     |     |     |     | mag |     |
-|           |           |     |     |     |     |     | e20 |     |
-|           |           |     |     |     |     |     | 3.p |     |
-|           |           |     |     |     |     |     | ng) |     |
-|           |           |     |     |     |     |     | {wi |     |
-|           |           |     |     |     |     |     | dth |     |
-|           |           |     |     |     |     |     | ="0 |     |
-|           |           |     |     |     |     |     | .44 |     |
-|           |           |     |     |     |     |     | 375 |     |
-|           |           |     |     |     |     |     | in" |     |
-|           |           |     |     |     |     |     | he  |     |
-|           |           |     |     |     |     |     | igh |     |
-|           |           |     |     |     |     |     | t=" |     |
-|           |           |     |     |     |     |     | 8.9 |     |
-|           |           |     |     |     |     |     | 583 |     |
-|           |           |     |     |     |     |     | 333 |     |
-|           |           |     |     |     |     |     | 333 |     |
-|           |           |     |     |     |     |     | 333 |     |
-|           |           |     |     |     |     |     | 33e |     |
-|           |           |     |     |     |     |     | -2i |     |
-|           |           |     |     |     |     |     | n"} |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| DWA       |           |     |     |     |     |     |     |     |
-| perc      |           |     |     |     |     |     |     |     |
-| eelaanslu |           |     |     |     |     |     |     |     |
-| itleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Gemengd   |           |     |     |     |     |     | ![  | ![  |
-| riool     |           |     |     |     |     |     | ](m | ](m |
-|           |           |     |     |     |     |     | edi | edi |
-|           |           |     |     |     |     |     | a/i | a/i |
-|           |           |     |     |     |     |     | mag | mag |
-|           |           |     |     |     |     |     | e20 | e20 |
-|           |           |     |     |     |     |     | 4.p | 5.p |
-|           |           |     |     |     |     |     | ng) | ng) |
-|           |           |     |     |     |     |     | {wi | {wi |
-|           |           |     |     |     |     |     | dth | dth |
-|           |           |     |     |     |     |     | ="0 | ="0 |
-|           |           |     |     |     |     |     | .44 | .44 |
-|           |           |     |     |     |     |     | 375 | 375 |
-|           |           |     |     |     |     |     | in" | in" |
-|           |           |     |     |     |     |     | h   | he  |
-|           |           |     |     |     |     |     | eig | igh |
-|           |           |     |     |     |     |     | ht= | t=" |
-|           |           |     |     |     |     |     | "0. | 7.9 |
-|           |           |     |     |     |     |     | 105 | 166 |
-|           |           |     |     |     |     |     | 555 | 666 |
-|           |           |     |     |     |     |     | 555 | 666 |
-|           |           |     |     |     |     |     | 555 | 666 |
-|           |           |     |     |     |     |     | 555 | 66e |
-|           |           |     |     |     |     |     | 56i | -2i |
-|           |           |     |     |     |     |     | n"} | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Gemengde  |           |     |     |     |     |     |     |     |
-| perc      |           |     |     |     |     |     |     |     |
-| eelaanslu |           |     |     |     |     |     |     |     |
-| itleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Goot      |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Hemelw    |           |     | ![  |     |     |     | ![  | ![  |
-| aterriool |           |     | ](m |     |     |     | ](m | ](m |
-|           |           |     | edi |     |     |     | edi | edi |
-|           |           |     | a/i |     |     |     | a/i | a/i |
-|           |           |     | mag |     |     |     | mag | mag |
-|           |           |     | e20 |     |     |     | e20 | e20 |
-|           |           |     | 6.p |     |     |     | 7.p | 8.p |
-|           |           |     | ng) |     |     |     | ng) | ng) |
-|           |           |     | {wi |     |     |     | {wi | {wi |
-|           |           |     | dth |     |     |     | dth | dth |
-|           |           |     | ="0 |     |     |     | ="0 | ="0 |
-|           |           |     | .44 |     |     |     | .44 | .44 |
-|           |           |     | 375 |     |     |     | 375 | 375 |
-|           |           |     | in" |     |     |     | in" | in" |
-|           |           |     | he  |     |     |     | he  | he  |
-|           |           |     | igh |     |     |     | igh | igh |
-|           |           |     | t=" |     |     |     | t=" | t=" |
-|           |           |     | 6.1 |     |     |     | 9.1 | 7.7 |
-|           |           |     | 805 |     |     |     | 666 | 777 |
-|           |           |     | 555 |     |     |     | 666 | 777 |
-|           |           |     | 555 |     |     |     | 666 | 777 |
-|           |           |     | 555 |     |     |     | 666 | 777 |
-|           |           |     | 56e |     |     |     | 66e | 78e |
-|           |           |     | -2i |     |     |     | -2i | -2i |
-|           |           |     | n"} |     |     |     | n"} | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| HWA       |           |     |     |     |     |     |     |     |
-| perc      |           |     |     |     |     |     |     |     |
-| eelaanslu |           |     |     |     |     |     |     |     |
-| itleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Infiltr   |           |     | ![  |     |     |     |     |     |
-| atieriool |           |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e20 |     |     |     |     |     |
-|           |           |     | 9.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 6.8 |     |     |     |     |     |
-|           |           |     | 75e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-|           |           |     |     |     |     |     |     |     |
-|           |           |     | DIT |     |     |     |     |     |
-|           |           |     | /DT |     |     |     |     |     |
-|           |           |     | /In |     |     |     |     |     |
-|           |           |     | fil |     |     |     |     |     |
-|           |           |     | tra |     |     |     |     |     |
-|           |           |     | tie |     |     |     |     |     |
-|           |           |     | -ri |     |     |     |     |     |
-|           |           |     | ool |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| K         |           |     |     |     |     |     |     |     |
-| olkaanslu |           |     |     |     |     |     |     |     |
-| itleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Lijna     |           |     |     |     |     |     |     |     |
-| fwatering |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Loze      |           |     | ![  |     |     |     |     |     |
-| leiding   |           |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e21 |     |     |     |     |     |
-|           |           |     | 0.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 7.2 |     |     |     |     |     |
-|           |           |     | 916 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 67e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-|           |           |     |     |     |     |     |     |     |
-|           |           |     | Bui |     |     |     |     |     |
-|           |           |     | ten |     |     |     |     |     |
-|           |           |     | b   |     |     |     |     |     |
-|           |           |     | edr |     |     |     |     |     |
-|           |           |     | ijf |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| M         |           |     |     |     |     |     |     |     |
-| antelbuis |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| O         |           |     |     |     |     |     |     |     |
-| ntluchtin |           |     |     |     |     |     |     |     |
-| gsleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Oversto   |           |     |     |     |     |     | ![  | ![  |
-| rtleiding |           |     |     |     |     |     | ](m | ](m |
-|           |           |     |     |     |     |     | edi | edi |
-|           |           |     |     |     |     |     | a/i | a/i |
-|           |           |     |     |     |     |     | mag | mag |
-|           |           |     |     |     |     |     | e21 | e21 |
-|           |           |     |     |     |     |     | 1.p | 2.p |
-|           |           |     |     |     |     |     | ng) | ng) |
-|           |           |     |     |     |     |     | {wi | {wi |
-|           |           |     |     |     |     |     | dth | dth |
-|           |           |     |     |     |     |     | ="0 | ="0 |
-|           |           |     |     |     |     |     | .44 | .44 |
-|           |           |     |     |     |     |     | 375 | 375 |
-|           |           |     |     |     |     |     | in" | in" |
-|           |           |     |     |     |     |     | he  | hei |
-|           |           |     |     |     |     |     | igh | ght |
-|           |           |     |     |     |     |     | t=" | ="5 |
-|           |           |     |     |     |     |     | 7.2 | .83 |
-|           |           |     |     |     |     |     | 222 | 333 |
-|           |           |     |     |     |     |     | 222 | 333 |
-|           |           |     |     |     |     |     | 222 | 333 |
-|           |           |     |     |     |     |     | 222 | 333 |
-|           |           |     |     |     |     |     | 22e | 34e |
-|           |           |     |     |     |     |     | -2i | -2i |
-|           |           |     |     |     |     |     | n"} | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Pe        |           |     | ![  |     |     |     | ![  | ![  |
-| rsleiding |           |     | ](m |     |     |     | ](m | ](m |
-|           |           |     | edi |     |     |     | edi | edi |
-|           |           |     | a/i |     |     |     | a/i | a/i |
-|           |           |     | mag |     |     |     | mag | mag |
-|           |           |     | e21 |     |     |     | e21 | e21 |
-|           |           |     | 3.p |     |     |     | 4.p | 5.p |
-|           |           |     | ng) |     |     |     | ng) | ng) |
-|           |           |     | {wi |     |     |     | {wi | {wi |
-|           |           |     | dth |     |     |     | dth | dth |
-|           |           |     | ="0 |     |     |     | ="0 | ="0 |
-|           |           |     | .44 |     |     |     | .44 | .44 |
-|           |           |     | 375 |     |     |     | 375 | 375 |
-|           |           |     | in" |     |     |     | in" | in" |
-|           |           |     | he  |     |     |     | he  | he  |
-|           |           |     | igh |     |     |     | igh | igh |
-|           |           |     | t=" |     |     |     | t=" | t=" |
-|           |           |     | 7.7 |     |     |     | 9.6 | 5.6 |
-|           |           |     | 777 |     |     |     | 527 | 944 |
-|           |           |     | 777 |     |     |     | 777 | 444 |
-|           |           |     | 777 |     |     |     | 777 | 444 |
-|           |           |     | 777 |     |     |     | 777 | 444 |
-|           |           |     | 78e |     |     |     | 78e | 44e |
-|           |           |     | -2i |     |     |     | -2i | -2i |
-|           |           |     | n"} |     |     |     | n"} | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Spo       |           |     |     |     |     |     |     |     |
-| elleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Stuwrio   |           |     |     |     |     |     |     |     |
-| olleiding |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Tra       |           |     |     |     |     |     |     | ![  |
-| nsportrio |           |     |     |     |     |     |     | ](m |
-| olleiding |           |     |     |     |     |     |     | edi |
-|           |           |     |     |     |     |     |     | a/i |
-|           |           |     |     |     |     |     |     | mag |
-|           |           |     |     |     |     |     |     | e21 |
-|           |           |     |     |     |     |     |     | 6.p |
-|           |           |     |     |     |     |     |     | ng) |
-|           |           |     |     |     |     |     |     | {wi |
-|           |           |     |     |     |     |     |     | dth |
-|           |           |     |     |     |     |     |     | ="0 |
-|           |           |     |     |     |     |     |     | .44 |
-|           |           |     |     |     |     |     |     | 375 |
-|           |           |     |     |     |     |     |     | in" |
-|           |           |     |     |     |     |     |     | he  |
-|           |           |     |     |     |     |     |     | igh |
-|           |           |     |     |     |     |     |     | t=" |
-|           |           |     |     |     |     |     |     | 6.8 |
-|           |           |     |     |     |     |     |     | 75e |
-|           |           |     |     |     |     |     |     | -2i |
-|           |           |     |     |     |     |     |     | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Vacu      |           |     |     |     |     |     |     | ![  |
-| ümleiding |           |     |     |     |     |     |     | ](m |
-|           |           |     |     |     |     |     |     | edi |
-|           |           |     |     |     |     |     |     | a/i |
-|           |           |     |     |     |     |     |     | mag |
-|           |           |     |     |     |     |     |     | e20 |
-|           |           |     |     |     |     |     |     | 2.p |
-|           |           |     |     |     |     |     |     | ng) |
-|           |           |     |     |     |     |     |     | {wi |
-|           |           |     |     |     |     |     |     | dth |
-|           |           |     |     |     |     |     |     | ="0 |
-|           |           |     |     |     |     |     |     | .44 |
-|           |           |     |     |     |     |     |     | 375 |
-|           |           |     |     |     |     |     |     | in" |
-|           |           |     |     |     |     |     |     | he  |
-|           |           |     |     |     |     |     |     | igh |
-|           |           |     |     |     |     |     |     | t=" |
-|           |           |     |     |     |     |     |     | 6.3 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 88e |
-|           |           |     |     |     |     |     |     | -2i |
-|           |           |     |     |     |     |     |     | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Vuilw     |           |     | ![  |     |     |     | ![  | ![  |
-| aterriool |           |     | ](m |     |     |     | ](m | ](m |
-|           |           |     | edi |     |     |     | edi | edi |
-|           |           |     | a/i |     |     |     | a/i | a/i |
-|           |           |     | mag |     |     |     | mag | mag |
-|           |           |     | e21 |     |     |     | e21 | e21 |
-|           |           |     | 7.p |     |     |     | 8.p | 9.p |
-|           |           |     | ng) |     |     |     | ng) | ng) |
-|           |           |     | {wi |     |     |     | {wi | {wi |
-|           |           |     | dth |     |     |     | dth | dth |
-|           |           |     | ="0 |     |     |     | ="0 | ="0 |
-|           |           |     | .44 |     |     |     | .44 | .44 |
-|           |           |     | 375 |     |     |     | 375 | 375 |
-|           |           |     | in" |     |     |     | in" | in" |
-|           |           |     | h   |     |     |     | he  | he  |
-|           |           |     | eig |     |     |     | igh | igh |
-|           |           |     | ht= |     |     |     | t=" | t=" |
-|           |           |     | "3. |     |     |     | 8.4 | 8.3 |
-|           |           |     | 75e |     |     |     | 027 | 333 |
-|           |           |     | -2i |     |     |     | 777 | 333 |
-|           |           |     | n"} |     |     |     | 777 | 333 |
-|           |           |     |     |     |     |     | 777 | 333 |
-|           |           |     |     |     |     |     | 78e | 33e |
-|           |           |     |     |     |     |     | -2i | -2i |
-|           |           |     |     |     |     |     | n"} | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| Zinker    |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Gerelined |     | ![  |     |     |     |     |     |
-|           |           |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 0.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 6.1 |     |     |     |     |     |
-|           |           |     | 805 |     |     |     |     |     |
-|           |           |     | 555 |     |     |     |     |     |
-|           |           |     | 555 |     |     |     |     |     |
-|           |           |     | 555 |     |     |     |     |     |
-|           |           |     | 56e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Pa        |     | ![  |     |     |     |     |     |
-|           | rticulier |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 1.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 6.7 |     |     |     |     |     |
-|           |           |     | 361 |     |     |     |     |     |
-|           |           |     | 111 |     |     |     |     |     |
-|           |           |     | 111 |     |     |     |     |     |
-|           |           |     | 111 |     |     |     |     |     |
-|           |           |     | 11e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Brandbl   |     | ![  |     |     |     |     |     |
-|           | usleiding |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 2.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 7.7 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 78e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Vuil,     |     | ![  |     |     |     |     |     |
-|           | onderheid |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 3.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 6.1 |     |     |     |     |     |
-|           |           |     | 111 |     |     |     |     |     |
-|           |           |     | 111 |     |     |     |     |     |
-|           |           |     | 111 |     |     |     |     |     |
-|           |           |     | 111 |     |     |     |     |     |
-|           |           |     | 11e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Re        |     | ![  |     |     |     |     |     |
-|           | genwater, |     | ](m |     |     |     |     |     |
-|           | onderheid |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 4.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 7.0 |     |     |     |     |     |
-|           |           |     | 833 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 33e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ? Duiker  | Singelv   |     | ![  |     |     |     |     |     |
-|           | erbinding |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 5.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | hei |     |     |     |     |     |
-|           |           |     | ght |     |     |     |     |     |
-|           |           |     | ="5 |     |     |     |     |     |
-|           |           |     | .20 |     |     |     |     |     |
-|           |           |     | 833 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 333 |     |     |     |     |     |
-|           |           |     | 36e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ? Duiker  | Singelve  |     | ![  |     |     |     |     |     |
-|           | rbinding, |     | ](m |     |     |     |     |     |
-|           | onderheid |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 6.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 6.0 |     |     |     |     |     |
-|           |           |     | 416 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 666 |     |     |     |     |     |
-|           |           |     | 67e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Sp        |     | ![  |     |     |     |     |     |
-|           | uileiding |     | ](m |     |     |     |     |     |
-|           |           |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 7.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 5.2 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 78e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Spu       |     | ![  |     |     |     |     |     |
-|           | ileiding, |     | ](m |     |     |     |     |     |
-|           | onderheid |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 8.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 4.7 |     |     |     |     |     |
-|           |           |     | 222 |     |     |     |     |     |
-|           |           |     | 222 |     |     |     |     |     |
-|           |           |     | 222 |     |     |     |     |     |
-|           |           |     | 222 |     |     |     |     |     |
-|           |           |     | 22e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Revisie   |     | ![  |     |     |     |     |     |
-|           | in        |     | ](m |     |     |     |     |     |
-|           | v         |     | edi |     |     |     |     |     |
-|           | erwerking |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e22 |     |     |     |     |     |
-|           |           |     | 9.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 6.1 |     |     |     |     |     |
-|           |           |     | 805 |     |     |     |     |     |
-|           |           |     | 555 |     |     |     |     |     |
-|           |           |     | 555 |     |     |     |     |     |
-|           |           |     | 555 |     |     |     |     |     |
-|           |           |     | 56e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Buiten    |     | ![  |     |     |     |     |     |
-|           | bedrijf,  |     | ](m |     |     |     |     |     |
-|           | onderheid |     | edi |     |     |     |     |     |
-|           |           |     | a/i |     |     |     |     |     |
-|           |           |     | mag |     |     |     |     |     |
-|           |           |     | e23 |     |     |     |     |     |
-|           |           |     | 0.p |     |     |     |     |     |
-|           |           |     | ng) |     |     |     |     |     |
-|           |           |     | {wi |     |     |     |     |     |
-|           |           |     | dth |     |     |     |     |     |
-|           |           |     | ="0 |     |     |     |     |     |
-|           |           |     | .44 |     |     |     |     |     |
-|           |           |     | 375 |     |     |     |     |     |
-|           |           |     | in" |     |     |     |     |     |
-|           |           |     | he  |     |     |     |     |     |
-|           |           |     | igh |     |     |     |     |     |
-|           |           |     | t=" |     |     |     |     |     |
-|           |           |     | 7.7 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 777 |     |     |     |     |     |
-|           |           |     | 78e |     |     |     |     |     |
-|           |           |     | -2i |     |     |     |     |     |
-|           |           |     | n"} |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Gemengd   |     |     |     |     |     |     | ![  |
-|           | riool,    |     |     |     |     |     |     | ](m |
-|           | gepr      |     |     |     |     |     |     | edi |
-|           | ojecteerd |     |     |     |     |     |     | a/i |
-|           |           |     |     |     |     |     |     | mag |
-|           |           |     |     |     |     |     |     | e23 |
-|           |           |     |     |     |     |     |     | 1.p |
-|           |           |     |     |     |     |     |     | ng) |
-|           |           |     |     |     |     |     |     | {wi |
-|           |           |     |     |     |     |     |     | dth |
-|           |           |     |     |     |     |     |     | ="0 |
-|           |           |     |     |     |     |     |     | .44 |
-|           |           |     |     |     |     |     |     | 375 |
-|           |           |     |     |     |     |     |     | in" |
-|           |           |     |     |     |     |     |     | h   |
-|           |           |     |     |     |     |     |     | eig |
-|           |           |     |     |     |     |     |     | ht= |
-|           |           |     |     |     |     |     |     | "7. |
-|           |           |     |     |     |     |     |     | 986 |
-|           |           |     |     |     |     |     |     | 111 |
-|           |           |     |     |     |     |     |     | 111 |
-|           |           |     |     |     |     |     |     | 111 |
-|           |           |     |     |     |     |     |     | 11e |
-|           |           |     |     |     |     |     |     | -2i |
-|           |           |     |     |     |     |     |     | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Hemelwa   |     |     |     |     |     |     | ![  |
-|           | terriool, |     |     |     |     |     |     | ](m |
-|           | gepr      |     |     |     |     |     |     | edi |
-|           | ojecteerd |     |     |     |     |     |     | a/i |
-|           |           |     |     |     |     |     |     | mag |
-|           |           |     |     |     |     |     |     | e23 |
-|           |           |     |     |     |     |     |     | 2.p |
-|           |           |     |     |     |     |     |     | ng) |
-|           |           |     |     |     |     |     |     | {wi |
-|           |           |     |     |     |     |     |     | dth |
-|           |           |     |     |     |     |     |     | ="0 |
-|           |           |     |     |     |     |     |     | .44 |
-|           |           |     |     |     |     |     |     | 375 |
-|           |           |     |     |     |     |     |     | in" |
-|           |           |     |     |     |     |     |     | he  |
-|           |           |     |     |     |     |     |     | igh |
-|           |           |     |     |     |     |     |     | t=" |
-|           |           |     |     |     |     |     |     | 6.8 |
-|           |           |     |     |     |     |     |     | 75e |
-|           |           |     |     |     |     |     |     | -2i |
-|           |           |     |     |     |     |     |     | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-| ?         | Vuilwa    |     |     |     |     |     |     | ![  |
-|           | terriool, |     |     |     |     |     |     | ](m |
-|           | gepr      |     |     |     |     |     |     | edi |
-|           | ojecteerd |     |     |     |     |     |     | a/i |
-|           |           |     |     |     |     |     |     | mag |
-|           |           |     |     |     |     |     |     | e23 |
-|           |           |     |     |     |     |     |     | 3.p |
-|           |           |     |     |     |     |     |     | ng) |
-|           |           |     |     |     |     |     |     | {wi |
-|           |           |     |     |     |     |     |     | dth |
-|           |           |     |     |     |     |     |     | ="0 |
-|           |           |     |     |     |     |     |     | .44 |
-|           |           |     |     |     |     |     |     | 375 |
-|           |           |     |     |     |     |     |     | in" |
-|           |           |     |     |     |     |     |     | he  |
-|           |           |     |     |     |     |     |     | igh |
-|           |           |     |     |     |     |     |     | t=" |
-|           |           |     |     |     |     |     |     | 8.2 |
-|           |           |     |     |     |     |     |     | 638 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 888 |
-|           |           |     |     |     |     |     |     | 89e |
-|           |           |     |     |     |     |     |     | -2i |
-|           |           |     |     |     |     |     |     | n"} |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
-|           |           |     |     |     |     |     |     |     |
-+-----------+-----------+-----+-----+-----+-----+-----+-----+-----+
+<table>
+<colgroup>
+<col style="width: 17%" />
+<col style="width: 17%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+<col style="width: 9%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>Soorten bouwwerk GWSW</th>
+<th>Veel gebruikte objectnamen in GIS</th>
+<th>NLCS</th>
+<th>Rotter-dam</th>
+<th>Antea Group</th>
+<th>HHNK</th>
+<th><p>Lizard</p>
+<p>(gebaseerd op Aquo standaard)</p></th>
+<th>Den Haag</th>
+<th>Sweco</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Bergbezinkleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Bergingsleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Drain</td>
+<td></td>
+<td></td>
+<td><img src="media/image198.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image199.png" style="width:0.44375in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Drukleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image200.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="odd">
+<td>Duiker</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image201.png" style="width:0.44375in" /></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>DWA perceelaansluitleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Gemengd riool</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image202.png" style="width:0.44375in;height:0.10556in" /></td>
+<td><img src="media/image203.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="even">
+<td>Gemengde perceelaansluitleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Goot</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Hemelwaterriool</td>
+<td></td>
+<td></td>
+<td><img src="media/image204.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image205.png" style="width:0.44375in" /></td>
+<td><img src="media/image206.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="odd">
+<td>HWA perceelaansluitleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Infiltratieriool</td>
+<td></td>
+<td></td>
+<td><p><img src="media/image207.png" style="width:0.44375in" /></p>
+<p>DIT/DT/Infiltratie-riool</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Kolkaansluitleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Lijnafwatering</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Loze leiding</td>
+<td></td>
+<td></td>
+<td><p><img src="media/image208.png" style="width:0.44375in" /></p>
+<p>Buiten bedrijf</p></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Mantelbuis</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Ontluchtingsleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Overstortleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image209.png" style="width:0.44375in" /></td>
+<td><img src="media/image210.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="odd">
+<td>Persleiding</td>
+<td></td>
+<td></td>
+<td><img src="media/image211.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image212.png" style="width:0.44375in" /></td>
+<td><img src="media/image213.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="even">
+<td>Spoelleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Stuwrioolleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Transportrioolleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image214.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="odd">
+<td>Vacuümleiding</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image200.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="even">
+<td>Vuilwaterriool</td>
+<td></td>
+<td></td>
+<td><img src="media/image215.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image216.png" style="width:0.44375in" /></td>
+<td><img src="media/image217.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="odd">
+<td>Zinker</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Gerelined</td>
+<td></td>
+<td><img src="media/image218.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Particulier</td>
+<td></td>
+<td><img src="media/image219.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Brandblusleiding</td>
+<td></td>
+<td><img src="media/image220.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Vuil, onderheid</td>
+<td></td>
+<td><img src="media/image221.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Regenwater, onderheid</td>
+<td></td>
+<td><img src="media/image222.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>? Duiker</td>
+<td>Singelverbinding</td>
+<td></td>
+<td><img src="media/image223.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>? Duiker</td>
+<td>Singelverbinding, onderheid</td>
+<td></td>
+<td><img src="media/image224.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Spuileiding</td>
+<td></td>
+<td><img src="media/image225.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Spuileiding, onderheid</td>
+<td></td>
+<td><img src="media/image226.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Revisie in verwerking</td>
+<td></td>
+<td><img src="media/image227.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Buiten bedrijf, onderheid</td>
+<td></td>
+<td><img src="media/image228.png" style="width:0.44375in" /></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Gemengd riool, geprojecteerd</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image229.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="even">
+<td>?</td>
+<td>Hemelwaterriool, geprojecteerd</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image230.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="odd">
+<td>?</td>
+<td>Vuilwaterriool, geprojecteerd</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td><img src="media/image231.png" style="width:0.44375in" /></td>
+</tr>
+<tr class="even">
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
